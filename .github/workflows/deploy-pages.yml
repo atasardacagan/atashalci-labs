@@ -1,0 +1,89 @@
+name: Deploy website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Set up Node.js for interaction tests
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Validate the default build and local routes
+        run: |
+          python3 scripts/build.py
+          python3 scripts/check.py
+          python3 scripts/routes.test.py
+
+      - name: Test Operations and bilingual interaction state
+        run: node --test scripts/ops-state.test.mjs scripts/i18n-runtime.test.mjs
+
+      - name: Read GitHub Pages configuration
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build and validate the public website
+        env:
+          SITE_ORIGIN: ${{ steps.pages.outputs.origin }}
+          SITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_TRAILING_SLASH: '1'
+        run: |
+          python3 scripts/build.py
+          python3 scripts/check.py
+
+      - name: Prepare the static artifact
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          # GitHub Pages manages response headers; the preview's rules are not deployed.
+          Path('dist/_headers').unlink(missing_ok=True)
+          Path('dist/.nojekyll').touch()
+          PY
+
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
