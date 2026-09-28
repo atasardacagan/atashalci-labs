@@ -83,7 +83,7 @@
       "state": "06 / ÇALIŞAN ÜRÜN",
       "title": "Fikir artık <br> işe yarar.",
       "description": "Bu küçük örneği çalıştırın. Otomasyon talebi, bir keşif adımına ve görev taslağına dönüşür. Aynı mantığın devamını yukarıdaki Flow deneyinde görebilirsiniz.",
-      "art": "<div class=\"product-sheet\"><span class=\"lab-label\">ÇALIŞAN MANTIK / LAB PROTOTİPİ</span><p class=\"sheet-title\">Bir talep. Anlamlı bir adım.</p><div class=\"product-values\"><div><span>Yön</span><strong id=\"product-route\">Belirlenmedi</strong></div><div><span>Sonraki adım</span><strong id=\"product-task\">Yok</strong></div></div><button class=\"run-product\" id=\"run-product\">Örnek talebi yönlendir →</button><p id=\"product-result\" role=\"status\" aria-live=\"polite\">Önceden tanımlı kurallarla çalışan yerel bir örnek. Mesaj gönderilmez.</p></div>"
+      "art": "<div class=\"product-sheet\"><span class=\"lab-label\">ÇALIŞAN MANTIK / LAB PROTOTİPİ</span><p class=\"sheet-title\">Bir talep. Anlamlı bir adım.</p><div class=\"product-values\"><div><span>Yön</span><strong id=\"product-route\">Belirlenmedi</strong></div><div><span>Sonraki adım</span><strong id=\"product-task\">Yok</strong></div></div><button class=\"run-product\" id=\"run-product\">Örnek talebi yönlendir <span class=\"ui-arrow ui-arrow--right\" aria-hidden=\"true\"></span></button><p id=\"product-result\" role=\"status\" aria-live=\"polite\">Önceden tanımlı kurallarla çalışan yerel bir örnek. Mesaj gönderilmez.</p></div>"
     }
   ],
   "site.stageAnnouncement": "{state}; 6 aşamadan {number}. aşama",
@@ -92,7 +92,7 @@
   "site.product.task": "İş akışını çıkar",
   "site.product.none": "Yok",
   "site.product.reset": "Örneği sıfırla",
-  "site.product.run": "Örnek talebi yönlendir →",
+  "site.product.run": "Örnek talebi yönlendir",
   "site.product.result": "Keşif önerildi. Görev taslağı: mevcut iş akışını çıkar. İnsan incelemesine hazır.",
   "site.product.empty": "Önceden tanımlı kurallarla çalışan yerel bir örnek. Mesaj gönderilmez.",
   "site.copy.action": "Adresi kopyala",

@@ -83,7 +83,7 @@
       "state": "06 / WORKING PRODUCT",
       "title": "The idea now <br> does something.",
       "description": "Run this small example. An automation inquiry becomes a discovery route and a draft task. The same logic scales into the Flow experiment above.",
-      "art": "<div class=\"product-sheet\"><span class=\"lab-label\">WORKING LOGIC / LAB PROTOTYPE</span><p class=\"sheet-title\">One inquiry. A useful next step.</p><div class=\"product-values\"><div><span>Route</span><strong id=\"product-route\">Unrouted</strong></div><div><span>Next step</span><strong id=\"product-task\">None</strong></div></div><button class=\"run-product\" id=\"run-product\">Route example inquiry →</button><p id=\"product-result\" role=\"status\" aria-live=\"polite\">A scripted local example. No message is sent.</p></div>"
+      "art": "<div class=\"product-sheet\"><span class=\"lab-label\">WORKING LOGIC / LAB PROTOTYPE</span><p class=\"sheet-title\">One inquiry. A useful next step.</p><div class=\"product-values\"><div><span>Route</span><strong id=\"product-route\">Unrouted</strong></div><div><span>Next step</span><strong id=\"product-task\">None</strong></div></div><button class=\"run-product\" id=\"run-product\">Route example inquiry <span class=\"ui-arrow ui-arrow--right\" aria-hidden=\"true\"></span></button><p id=\"product-result\" role=\"status\" aria-live=\"polite\">A scripted local example. No message is sent.</p></div>"
     }
   ],
   "site.stageAnnouncement": "{state}; stage {number} of 6",
@@ -92,7 +92,7 @@
   "site.product.task": "Map process",
   "site.product.none": "None",
   "site.product.reset": "Reset example",
-  "site.product.run": "Route example inquiry →",
+  "site.product.run": "Route example inquiry",
   "site.product.result": "Discovery proposed. Draft task: map the current process. Ready for human review.",
   "site.product.empty": "A scripted local example. No message is sent.",
   "site.copy.action": "Copy address",

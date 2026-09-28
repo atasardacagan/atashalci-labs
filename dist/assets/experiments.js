@@ -1,4 +1,5 @@
 import { t, onLocaleChange } from './i18n.js';
+import { setArrowLabel } from './icons.js';
 
 // All records and transitions in this module are local prototype state.
 const $ = selector => document.querySelector(selector);
@@ -47,7 +48,7 @@ function renderFlow() {
   const entries = progress < 0 ? [t('flow.log.waiting')] : steps.slice(0, progress + 1).map((step, i) => String(i + 1).padStart(2, '0') + ' / ' + step.log);
   entries.forEach(value => { const li = document.createElement('li'); li.textContent = value; log.append(li); });
   $('#flow-run').disabled = progress === 5 || running;
-  $('#flow-run').textContent = t(running ? 'flow.run.running' : progress === 5 ? 'flow.run.complete' : execution === 'automatic' ? 'flow.run.automatic' : progress < 0 ? 'flow.run.start' : 'flow.run.advance', { step: t('flow.stepLabels')[progress + 1] });
+  setArrowLabel($('#flow-run'), t(running ? 'flow.run.running' : progress === 5 ? 'flow.run.complete' : execution === 'automatic' ? 'flow.run.automatic' : progress < 0 ? 'flow.run.start' : 'flow.run.advance', { step: t('flow.stepLabels')[progress + 1] }), running || progress === 5 ? null : 'right');
   put('#flow-instruction', t(execution === 'manual' ? 'flow.instruction.manual' : 'flow.instruction.automatic'));
   renderFlowStatus();
 }

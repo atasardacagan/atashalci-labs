@@ -1,4 +1,5 @@
 import { t, getLocale, onLocaleChange } from './i18n.js';
+import { setArrowLabel } from './icons.js';
 
 const menu = document.querySelector('.menu-toggle'), mobile = document.querySelector('#mobile-nav');
 function renderMenu() {
@@ -58,7 +59,7 @@ function renderProduct() {
   if (!run) return;
   setText('product-route', t(productRecorded ? 'site.product.route' : 'site.product.unrouted'));
   setText('product-task', t(productRecorded ? 'site.product.task' : 'site.product.none'));
-  run.textContent = t(productRecorded ? 'site.product.reset' : 'site.product.run');
+  setArrowLabel(run, t(productRecorded ? 'site.product.reset' : 'site.product.run'), productRecorded ? null : 'right');
   setText('product-result', t(productRecorded ? 'site.product.result' : 'site.product.empty'));
 }
 function renderStage(tab, preserveState = false) {

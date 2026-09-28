@@ -65,3 +65,14 @@ body:not([data-site-ready]) .cap-tabs button>i{visibility:hidden}
 .lab-action{white-space:normal}.flow-controls>*{min-width:0}.flow-mode>div{flex-wrap:wrap}.production-tabs button{min-width:0;overflow-wrap:normal}
 :lang(tr) .hero-editorial h1{max-width:100%}
 @media(max-width:600px){:lang(tr) .hero-editorial{grid-template-columns:1fr}:lang(tr) .hero-editorial h1{font-size:clamp(43px,11vw,60px)}:lang(tr) .hero-position{justify-self:start;padding-top:0}:lang(tr) .hero-position p{max-width:300px}:lang(tr) .hero-position p br{display:none}:lang(tr) .hero-editorial h1 span{padding-left:13px}:lang(tr) .direction-console{grid-template-columns:1fr 1fr}:lang(tr) .motion-control{max-width:48%;text-align:right}:lang(tr) .motion-control span{margin-left:8px}:lang(tr) .bottom-left{max-width:46%}}
+
+/* A/L arrows: one precise line drawing at every size, independent of emoji fonts.
+   The parent keeps its existing color, type scale and interaction transforms. */
+.ui-arrow{display:inline-block;position:relative;inline-size:1em;block-size:1em;flex:0 0 auto;vertical-align:-.12em;line-height:1;transform:rotate(var(--arrow-angle,0deg));pointer-events:none}
+.ui-arrow::before{content:"";position:absolute;left:12%;top:50%;width:76%;border-top:max(1px,.045em) solid currentColor;transform:translateY(-50%)}
+.ui-arrow::after{content:"";position:absolute;right:23%;top:50%;width:52%;height:52%;border-top:max(1px,.045em) solid currentColor;border-right:max(1px,.045em) solid currentColor;transform:translateY(-50%) rotate(45deg)}
+.ui-arrow--ne{--arrow-angle:-45deg}
+.ui-arrow--se{--arrow-angle:45deg}
+.ui-arrow--down{--arrow-angle:90deg}
+.ui-arrow--left{--arrow-angle:180deg}
+.ui-arrow--up{--arrow-angle:-90deg}
