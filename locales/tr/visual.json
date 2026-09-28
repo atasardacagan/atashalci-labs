@@ -1,0 +1,28 @@
+{
+  "i18n.changed": "Türkçe seçildi.",
+  "i18n.error": "Dil yüklenemedi. Lütfen yeniden deneyin.",
+  "visual.defaultWord": "FİKİR",
+  "visual.canvasLabel": "Üç boyutlu tipografik parçalardan oluşan {word}",
+  "visual.amount": "Yüzde {amount} birleştirildi",
+  "visual.possibility": "OLASILIK",
+  "visual.structure": "YAPI",
+  "visual.precision": "NETLİK",
+  "visual.reduced": "Azaltılmış hareket",
+  "visual.paused": "Hareket duraklatıldı",
+  "visual.pause": "Hareketi duraklat",
+  "visual.signalStatic": "Durağan görünüm",
+  "visual.signalFallback": "Bu cihaz için tipografik bir alternatif.",
+  "visual.signalLive": "Anlık olarak üretilir. Video veya hazır animasyon değildir.",
+  "visual.signalGlobalPause": "Tüm hareketler duraklatıldı",
+  "visual.signalResume": "Hareketi sürdür ▷",
+  "visual.signalPause": "Hareketi duraklat Ⅱ",
+  "visual.signalReduced": "Azaltılmış hareket —",
+  "visual.signalEnergy": "Yüzde {amount} enerji",
+  "visual.signalModes": [
+    "01 / ALAN",
+    "02 / YANKI",
+    "03 / KONTUR"
+  ],
+  "visual.initialPercent": "%100",
+  "signal.initialPercent": "%45"
+}

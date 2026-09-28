@@ -1,0 +1,105 @@
+{
+  "site.menu": "Menü",
+  "site.menuClose": "Kapat",
+  "site.capabilities": {
+    "products": {
+      "purpose": "İşinizin bir sonraki ihtiyacı.",
+      "items": [
+        "SaaS platformları",
+        "Özel yazılım",
+        "Web uygulamaları",
+        "Şirket içi araçlar",
+        "Ürün geliştirme"
+      ],
+      "detail": "İlk fikirden her gün kullanılan yazılıma. Ürünü şekillendirir, geliştirir ve bir sonraki adım için alan açarız."
+    },
+    "intelligence": {
+      "purpose": "İşin içinde zekâ.",
+      "items": [
+        "AI destekli ürünler",
+        "AI ajanları",
+        "LLM entegrasyonları",
+        "İş akışı otomasyonu",
+        "İş süreçleri otomasyonu",
+        "API entegrasyonları"
+      ],
+      "detail": "Bilgiyi eyleme bağlarız. Ajanları, dil modeli sistemlerini ve iş akışlarını işinizin gerektirdiği kararlar etrafında kurarız."
+    },
+    "experiences": {
+      "purpose": "Deneyim de ürünün bir parçası.",
+      "items": [
+        "Üst düzey web siteleri",
+        "Etkileşimli web siteleri",
+        "3D web deneyimleri",
+        "Hareket tasarımı",
+        "UI / UX tasarımı"
+      ],
+      "detail": "Karmaşık olanı anlaşılır, kullanışlı olanı kendine özgü kılarız. Net bir bakış açısıyla arayüzler, web siteleri ve dijital deneyimler tasarlarız."
+    },
+    "engineering": {
+      "purpose": "Her parçası birlikte çalışmalı.",
+      "items": [
+        "MVP geliştirme",
+        "Full-stack geliştirme",
+        "API geliştirme",
+        "Sistem entegrasyonları",
+        "Altyapı"
+      ],
+      "detail": "İlk çalışan sürümden birbirine bağlı bir sisteme. Açık bir mimari, amacına uygun testler ve üzerine inşa edebileceğiniz sağlam bir temel."
+    }
+  },
+  "site.production": [
+    {
+      "state": "01 / AMAÇ",
+      "title": "İnsandan <br> başlarız.",
+      "description": "Yönü gerçek bir ihtiyaç belirler. Aracı seçmeden önce ürünün neyi kolaylaştıracağına karar veririz.",
+      "art": "<div class=\"brief-fragment\"><span class=\"lab-label\">İNSANDAN GELEN FİKİR / LAB ÖRNEĞİ</span><p>“Bir talep geldiğinde, <br> <mark>sonraki adım belli olsun.</mark>”</p><span class=\"fragment-slash\" aria-hidden=\"true\">/</span></div>"
+    },
+    {
+      "state": "02 / TANIM",
+      "title": "Fikrin sınırlarını <br> netleştiririz.",
+      "description": "Girdileri, kuralları ve beklenen davranışı tanımlarız. Net bir tanım, hem insana hem AI’a yön verir.",
+      "art": "<div class=\"spec-sheet\"><span class=\"lab-label\">AYNI FİKİR / NET BİR TANIM</span><p class=\"sheet-title\">Sonraki adım belli olsun.</p><dl><div><dt>Girdi</dt><dd>Bir talep ve amacı.</dd></div><div><dt>Kural</dt><dd>Otomasyon talebi → keşif.</dd></div><div><dt>Çıktı</dt><dd>Önerilen yön ve görev taslağı.</dd></div><div><dt>Sınır</dt><dd>Uygulama öncesinde insan onayı.</dd></div></dl></div>"
+    },
+    {
+      "state": "03 / MANTIK",
+      "title": "Kuralı çalışan <br> mantığa çeviririz.",
+      "description": "Küçük ve açık bir kural, davranışı test edilebilir kılar. Bu deneyde yönlendirme önceden tanımlı kurallara dayanır; kararın nasıl alındığı incelenebilir.",
+      "art": "<div class=\"logic-sheet\"><span class=\"lab-label\">ÖRNEK KURAL / AMAÇ → YÖN</span><p>Otomasyon <br> <span>→</span> Keşif</p><div class=\"logic-formula\">amaç = otomasyon ise <br> yön = <strong>keşif</strong> <br> sonraki adım = mevcut iş akışını çıkar</div></div>"
+    },
+    {
+      "state": "04 / ARAYÜZ",
+      "title": "Sistemi anlaşılır <br> kılarız.",
+      "description": "Arayüz, önemli kararları görünür kılar. Aynı mantık artık insanın okuyup kullanabileceği bir biçim alır.",
+      "art": "<div class=\"interface-sheet\"><span class=\"lab-label\">ARAYÜZ YAPISI / ÖRNEK TALEP</span><p class=\"sheet-title\">Sonraki adım görünür olur.</p><div class=\"interface-wire\"><div><span>Amaç</span><span>Otomasyon</span></div><div><span>Önerilen yön</span><span>Keşif</span></div><div><span>Eylem</span><span>Görev taslağı</span></div><div class=\"wire-action\">İnsan onayı gerekir</div></div></div>"
+    },
+    {
+      "state": "05 / OTOMASYON",
+      "title": "Her eylemi <br> sonucuna bağlarız.",
+      "description": "Bir talep, önerilen yönü ve sonraki adımı tetikler. Açık kurallar süreci izlenebilir tutar; insan onayı akışın parçası olarak kalır.",
+      "art": "<div class=\"automation-sheet\"><span class=\"lab-label\">TEK OLAY / BAĞLI EYLEMLER</span><div class=\"automation-track\"><div><span>01</span>Talep alındı</div><i aria-hidden=\"true\"></i><div><span>02</span>Yön önerildi</div><i aria-hidden=\"true\"></i><div><span>03</span>İnceleme görevi hazır</div></div></div>"
+    },
+    {
+      "state": "06 / ÇALIŞAN ÜRÜN",
+      "title": "Fikir artık <br> işe yarar.",
+      "description": "Bu küçük örneği çalıştırın. Otomasyon talebi, bir keşif adımına ve görev taslağına dönüşür. Aynı mantığın devamını yukarıdaki Flow deneyinde görebilirsiniz.",
+      "art": "<div class=\"product-sheet\"><span class=\"lab-label\">ÇALIŞAN MANTIK / LAB PROTOTİPİ</span><p class=\"sheet-title\">Bir talep. Anlamlı bir adım.</p><div class=\"product-values\"><div><span>Yön</span><strong id=\"product-route\">Belirlenmedi</strong></div><div><span>Sonraki adım</span><strong id=\"product-task\">Yok</strong></div></div><button class=\"run-product\" id=\"run-product\">Örnek talebi yönlendir →</button><p id=\"product-result\" role=\"status\" aria-live=\"polite\">Önceden tanımlı kurallarla çalışan yerel bir örnek. Mesaj gönderilmez.</p></div>"
+    }
+  ],
+  "site.stageAnnouncement": "{state}; 6 aşamadan {number}. aşama",
+  "site.product.route": "Keşif",
+  "site.product.unrouted": "Belirlenmedi",
+  "site.product.task": "İş akışını çıkar",
+  "site.product.none": "Yok",
+  "site.product.reset": "Örneği sıfırla",
+  "site.product.run": "Örnek talebi yönlendir →",
+  "site.product.result": "Keşif önerildi. Görev taslağı: mevcut iş akışını çıkar. İnsan incelemesine hazır.",
+  "site.product.empty": "Önceden tanımlı kurallarla çalışan yerel bir örnek. Mesaj gönderilmez.",
+  "site.copy.action": "Adresi kopyala",
+  "site.copy.success": "Kopyalandı",
+  "site.copy.status": "Adres kopyalandı.",
+  "site.copy.failure": "Kopyalamak için yukarıdaki adresi seçin.",
+  "site.contact.defaultWord": "fikrini",
+  "site.contact.subject": "Atashalci Labs için bir fikir",
+  "site.contact.wordSubject": "Atashalci Labs için bir fikir: {word}"
+}

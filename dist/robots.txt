@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atashalci-labs.acagan0.chatgpt.site/sitemap.xml

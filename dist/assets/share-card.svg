@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">ATASHALCI LABS — Ideas need direction.</title>
+  <desc id="description">An editorial composition in off-white and red on a dark background, with the Atashalci Labs slash.</desc>
+  <rect width="1200" height="630" fill="#111210"/>
+  <g fill="#f1f1e9" font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="79" font-size="29" font-weight="700" letter-spacing="-1.4">ATASHALCI</text>
+    <text x="268" y="78" font-size="14" letter-spacing="2.4">LABS</text>
+  </g>
+  <path d="M254 47L241 85" stroke="#ff5532" stroke-width="4"/>
+  <text x="1136" y="74" fill="#afb2a5" font-family="Courier New, monospace" font-size="13" letter-spacing=".7" text-anchor="end">INDEPENDENT CREATIVE TECHNOLOGY</text>
+  <path d="M64 114H1136 M64 499H1136" stroke="#36392f" fill="none"/>
+  <g fill="#f1f1e9" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="500" letter-spacing="-7">
+    <text x="60" y="281">Ideas need</text>
+    <text x="119" y="400">direction.</text>
+  </g>
+  <path d="M1057 174L968 425" stroke="#ff5532" stroke-width="25"/>
+  <g fill="#afb2a5" font-family="Courier New, monospace" font-size="13" letter-spacing=".3">
+    <text x="64" y="545">AI-NATIVE. HUMAN-LED. / ISTANBUL</text>
+    <text x="64" y="584">CUSTOM SOFTWARE / SAAS / AI SYSTEMS / AUTOMATION / DIGITAL EXPERIENCES</text>
+  </g>
+  <text x="1136" y="582" fill="#ff5532" font-family="Courier New, monospace" font-size="15" text-anchor="end">A/L</text>
+</svg>

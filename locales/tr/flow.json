@@ -1,0 +1,145 @@
+{
+  "flow.briefs": {
+    "automation": {
+      "brief": "Manuel talep sürecimizi otomatikleştirin.",
+      "route": "Otomasyon keşfi",
+      "question": "Hangi araçlar kullanılıyor ve adımlar arası geçiş nerede aksıyor?",
+      "task": "Mevcut talep akışını çıkar"
+    },
+    "product": {
+      "brief": "Bir fikri SaaS ürününe dönüştürün.",
+      "route": "Ürün keşfi",
+      "question": "İlk kullanıcı kim ve ürünle ne yapabilmeli?",
+      "task": "Ürünün ilk anlamlı kapsamını belirle"
+    },
+    "website": {
+      "brief": "Web sitemize daha güçlü bir ifade kazandırın.",
+      "route": "Deneyim keşfi",
+      "question": "Ziyaretçi neyi anlamalı, ne hissetmeli ve ne yapmalı?",
+      "task": "Etkileşimin yönünü belirle"
+    }
+  },
+  "flow.stepLabels": [
+    "Talep",
+    "AI Analizi",
+    "CRM",
+    "E-posta",
+    "Görev",
+    "Raporlama"
+  ],
+  "flow.steps": [
+    {
+      "label": "TALEP / GİRDİ",
+      "title": "Her talebin gideceği bir yer var.",
+      "fields": [
+        [
+          "Talep",
+          "{brief}"
+        ],
+        [
+          "Kaynak",
+          "Kurgusal talep / DEMO-01"
+        ]
+      ],
+      "log": "Talep yerel olarak kaydedildi"
+    },
+    {
+      "label": "AI ANALİZİ / AMAÇ",
+      "title": "Talebin izleyeceği yol netleşir.",
+      "fields": [
+        [
+          "Yön",
+          "{route}"
+        ],
+        [
+          "Yöntem",
+          "Bu prototip için önceden tanımlı kurallarla sınıflandırma"
+        ]
+      ],
+      "log": "Örnek talebin amacı sınıflandırıldı"
+    },
+    {
+      "label": "CRM / BAĞLAM",
+      "title": "Bağlam, kayıtla birlikte kalır.",
+      "fields": [
+        [
+          "Kayıt",
+          "DEMO-01 / {route}"
+        ],
+        [
+          "Durum",
+          "İncelemeye hazır · yerel kayıt"
+        ]
+      ],
+      "log": "Yerel CRM kaydı hazırlandı"
+    },
+    {
+      "label": "E-POSTA / İLETİŞİM",
+      "title": "Yerinde bir soru. Bir taslak.",
+      "fields": [
+        [
+          "Taslak",
+          "{question}"
+        ],
+        [
+          "Gönderim",
+          "Gönderilmedi. İnsan onayı gerekir."
+        ]
+      ],
+      "log": "E-posta taslağı kaydedildi · gönderilmedi"
+    },
+    {
+      "label": "GÖREV / SONRAKİ ADIM",
+      "title": "Sıradaki adım somutlaşır.",
+      "fields": [
+        [
+          "Görev",
+          "{task}"
+        ],
+        [
+          "Sorumlu",
+          "Keşif sorumlusu / örnek atama"
+        ]
+      ],
+      "log": "Keşif görevi hazırlandı"
+    },
+    {
+      "label": "RAPORLAMA / BÜTÜN",
+      "title": "Bir talep. İzlenebilir bir süreç.",
+      "fields": [
+        [
+          "Yön",
+          "{route}"
+        ],
+        [
+          "Sonuç",
+          "Kayıt + yanıt taslağı + görev hazır"
+        ],
+        [
+          "Sınır",
+          "Yerel gösterim. Dış sistemlerde işlem yapılmaz."
+        ]
+      ],
+      "log": "Yerel işlem kaydı tamamlandı"
+    }
+  ],
+  "flow.node.complete": "Tamamlandı",
+  "flow.node.next": "Sıradaki",
+  "flow.node.waiting": "Bekliyor",
+  "flow.payload.complete": "YEREL SONUÇ / TAMAMLANDI",
+  "flow.payload.preview": "ÖNİZLEME / ÇALIŞTIRILMADI",
+  "flow.log.waiting": "Yönlendirmenizi bekliyor.",
+  "flow.run.running": "Akış çalışıyor…",
+  "flow.run.complete": "Süreç tamamlandı ✓",
+  "flow.run.automatic": "Akışı çalıştır →",
+  "flow.run.start": "Süreci başlat →",
+  "flow.run.advance": "Sonraki adım: {step} →",
+  "flow.instruction.manual": "Süreci adım adım ilerletin. Ardından Otomatik moda geçip aynı akışı çalıştırın.",
+  "flow.instruction.automatic": "Tek tetikleyici, aynı örnek talebi altı adımdan geçirir. Sonucunu görmek için dilediğiniz aşamayı seçin.",
+  "flow.status.ready": "Hazır. Dış servislere bağlantı yok.",
+  "flow.status.advanced": "{step} tamamlandı. Yerel akışta {count}/6 adım tamamlandı.",
+  "flow.status.finished": "{step} tamamlandı. Prototip akışı bitti. Dış sistemlerde işlem yapılmadı.",
+  "flow.status.inspectedComplete": "İncelenen aşama: {step}. Yerel sonuç hazır.",
+  "flow.status.inspectedPreview": "İncelenen aşama: {step}. Önizleme. Bu aşama henüz çalıştırılmadı.",
+  "flow.node.inspecting": " / İNCELEME"
+}

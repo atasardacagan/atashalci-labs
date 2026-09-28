@@ -1,0 +1,105 @@
+{
+  "site.menu": "Menu",
+  "site.menuClose": "Close",
+  "site.capabilities": {
+    "products": {
+      "purpose": "The thing your business needs next.",
+      "items": [
+        "SaaS platforms",
+        "Custom software",
+        "Web applications",
+        "Internal business tools",
+        "Product development"
+      ],
+      "detail": "From an early idea to the software people use every day. We shape the product, build it and make room for what comes next."
+    },
+    "intelligence": {
+      "purpose": "Intelligence inside the work.",
+      "items": [
+        "AI-powered products",
+        "AI agents",
+        "LLM integrations",
+        "Workflow automation",
+        "Business automation",
+        "API integrations"
+      ],
+      "detail": "Connect information to action. We build agents, language-model systems and workflows around the decisions your business actually needs to make."
+    },
+    "experiences": {
+      "purpose": "The experience is part of the product.",
+      "items": [
+        "Premium websites",
+        "Interactive websites",
+        "3D web experiences",
+        "Motion design",
+        "UI / UX design"
+      ],
+      "detail": "Make complex things feel intuitive and useful things feel distinctive. Interfaces, websites and digital experiences with a clear point of view."
+    },
+    "engineering": {
+      "purpose": "The whole thing has to work.",
+      "items": [
+        "MVP development",
+        "Full-stack development",
+        "API development",
+        "System integrations",
+        "Infrastructure"
+      ],
+      "detail": "From the first working version to a connected system. Clear architecture, deliberate testing and a foundation you can keep building on."
+    }
+  },
+  "site.production": [
+    {
+      "state": "01 / INTENT",
+      "title": "Start with <br> something human.",
+      "description": "A real need sets the direction. Before choosing a tool, we decide what the product should make easier.",
+      "art": "<div class=\"brief-fragment\"><span class=\"lab-label\">HUMAN INPUT / LAB EXAMPLE</span><p>“When an inquiry arrives, <br> <mark>give it a clear next step.</mark>”</p><span class=\"fragment-slash\" aria-hidden=\"true\">/</span></div>"
+    },
+    {
+      "state": "02 / SPECIFICATION",
+      "title": "Give the idea <br> clear boundaries.",
+      "description": "Name the inputs, rules and expected behavior. A precise specification gives both people and AI a useful direction.",
+      "art": "<div class=\"spec-sheet\"><span class=\"lab-label\">THE SAME BRIEF / MADE PRECISE</span><p class=\"sheet-title\">Give it a clear next step.</p><dl><div><dt>Input</dt><dd>An inquiry and its intent.</dd></div><div><dt>Rule</dt><dd>Automation inquiry → discovery.</dd></div><div><dt>Output</dt><dd>A proposed route and draft task.</dd></div><div><dt>Constraint</dt><dd>Human review before execution.</dd></div></dl></div>"
+    },
+    {
+      "state": "03 / LOGIC",
+      "title": "Make the rule <br> executable.",
+      "description": "A small, explicit rule makes the behavior testable. This lab example uses scripted routing so the decision remains easy to inspect.",
+      "art": "<div class=\"logic-sheet\"><span class=\"lab-label\">EXAMPLE RULE / INTENT → ROUTE</span><p>Automation <br> <span>→</span> Discovery</p><div class=\"logic-formula\">if intent = automation <br> route = <strong>discovery</strong> <br> next = map the current process</div></div>"
+    },
+    {
+      "state": "04 / INTERFACE",
+      "title": "Make the system <br> understandable.",
+      "description": "The interface exposes the decisions that matter. The same logic now has a shape a person can read and use.",
+      "art": "<div class=\"interface-sheet\"><span class=\"lab-label\">INTERFACE STRUCTURE / SAMPLE INQUIRY</span><p class=\"sheet-title\">A next step, made visible.</p><div class=\"interface-wire\"><div><span>Intent</span><span>Automation</span></div><div><span>Proposed route</span><span>Discovery</span></div><div><span>Action</span><span>Draft task</span></div><div class=\"wire-action\">Human review required</div></div></div>"
+    },
+    {
+      "state": "05 / AUTOMATION",
+      "title": "Connect the action <br> to its consequences.",
+      "description": "An inquiry triggers a proposed route and next step. Explicit rules keep the operation traceable; human review remains in the loop.",
+      "art": "<div class=\"automation-sheet\"><span class=\"lab-label\">ONE EVENT / CONNECTED ACTIONS</span><div class=\"automation-track\"><div><span>01</span>Inquiry received</div><i aria-hidden=\"true\"></i><div><span>02</span>Route proposed</div><i aria-hidden=\"true\"></i><div><span>03</span>Review task prepared</div></div></div>"
+    },
+    {
+      "state": "06 / WORKING PRODUCT",
+      "title": "The idea now <br> does something.",
+      "description": "Run this small example. An automation inquiry becomes a discovery route and a draft task. The same logic scales into the Flow experiment above.",
+      "art": "<div class=\"product-sheet\"><span class=\"lab-label\">WORKING LOGIC / LAB PROTOTYPE</span><p class=\"sheet-title\">One inquiry. A useful next step.</p><div class=\"product-values\"><div><span>Route</span><strong id=\"product-route\">Unrouted</strong></div><div><span>Next step</span><strong id=\"product-task\">None</strong></div></div><button class=\"run-product\" id=\"run-product\">Route example inquiry →</button><p id=\"product-result\" role=\"status\" aria-live=\"polite\">A scripted local example. No message is sent.</p></div>"
+    }
+  ],
+  "site.stageAnnouncement": "{state}; stage {number} of 6",
+  "site.product.route": "Discovery",
+  "site.product.unrouted": "Unrouted",
+  "site.product.task": "Map process",
+  "site.product.none": "None",
+  "site.product.reset": "Reset example",
+  "site.product.run": "Route example inquiry →",
+  "site.product.result": "Discovery proposed. Draft task: map the current process. Ready for human review.",
+  "site.product.empty": "A scripted local example. No message is sent.",
+  "site.copy.action": "Copy address",
+  "site.copy.success": "Copied",
+  "site.copy.status": "Address copied.",
+  "site.copy.failure": "Select the address above to copy it.",
+  "site.contact.defaultWord": "your idea",
+  "site.contact.subject": "An idea for Atashalci Labs",
+  "site.contact.wordSubject": "An idea for Atashalci Labs: {word}"
+}

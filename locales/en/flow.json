@@ -1,0 +1,145 @@
+{
+  "flow.briefs": {
+    "automation": {
+      "brief": "Connect our manual lead process.",
+      "route": "Automation discovery",
+      "question": "Which tools are involved, and where does the handoff break?",
+      "task": "Map the current lead process"
+    },
+    "product": {
+      "brief": "Turn an idea into a SaaS product.",
+      "route": "Product discovery",
+      "question": "Who is the first user, and what should they be able to do?",
+      "task": "Define the first useful product slice"
+    },
+    "website": {
+      "brief": "Make our website more expressive.",
+      "route": "Experience discovery",
+      "question": "What should a visitor understand, feel and do?",
+      "task": "Frame the interaction direction"
+    }
+  },
+  "flow.stepLabels": [
+    "Lead",
+    "AI Analysis",
+    "CRM",
+    "Email",
+    "Task",
+    "Reporting"
+  ],
+  "flow.steps": [
+    {
+      "label": "LEAD / THE INPUT",
+      "title": "A request has somewhere to go.",
+      "fields": [
+        [
+          "Brief",
+          "{brief}"
+        ],
+        [
+          "Origin",
+          "Fictional inquiry / DEMO-01"
+        ]
+      ],
+      "log": "Lead captured in local state"
+    },
+    {
+      "label": "AI ANALYSIS / THE INTENT",
+      "title": "The request becomes a direction.",
+      "fields": [
+        [
+          "Route",
+          "{route}"
+        ],
+        [
+          "Method",
+          "Scripted classification for this prototype"
+        ]
+      ],
+      "log": "Example intent classified"
+    },
+    {
+      "label": "CRM / THE CONTEXT",
+      "title": "Keep the context with the record.",
+      "fields": [
+        [
+          "Record",
+          "DEMO-01 / {route}"
+        ],
+        [
+          "State",
+          "Prepared for review · local record"
+        ]
+      ],
+      "log": "Local CRM record prepared"
+    },
+    {
+      "label": "EMAIL / THE CONVERSATION",
+      "title": "A considered question. A draft.",
+      "fields": [
+        [
+          "Draft",
+          "{question}"
+        ],
+        [
+          "Delivery",
+          "Not sent. Human review required."
+        ]
+      ],
+      "log": "Email draft saved · not sent"
+    },
+    {
+      "label": "TASK / THE NEXT STEP",
+      "title": "Make the next move tangible.",
+      "fields": [
+        [
+          "Task",
+          "{task}"
+        ],
+        [
+          "Owner",
+          "Discovery role / sample assignment"
+        ]
+      ],
+      "log": "Discovery task prepared"
+    },
+    {
+      "label": "REPORTING / THE WHOLE",
+      "title": "One inquiry. A traceable journey.",
+      "fields": [
+        [
+          "Route",
+          "{route}"
+        ],
+        [
+          "Result",
+          "Record + reply draft + task prepared"
+        ],
+        [
+          "Boundary",
+          "Local demonstration. No external execution."
+        ]
+      ],
+      "log": "Local execution trace complete"
+    }
+  ],
+  "flow.node.complete": "Complete",
+  "flow.node.next": "Next",
+  "flow.node.waiting": "Waiting",
+  "flow.payload.complete": "LOCAL RESULT / COMPLETE",
+  "flow.payload.preview": "PREVIEW / NOT RUN",
+  "flow.log.waiting": "Waiting for your direction.",
+  "flow.run.running": "Running the sequence…",
+  "flow.run.complete": "Process complete ✓",
+  "flow.run.automatic": "Run the workflow →",
+  "flow.run.start": "Start the process →",
+  "flow.run.advance": "Advance to {step} →",
+  "flow.instruction.manual": "Move the work forward yourself. Then switch to Automated and run the same process.",
+  "flow.instruction.automatic": "One trigger carries the same sample inquiry through all six steps. Inspect any stage to see its result.",
+  "flow.status.ready": "Ready. No external services are connected.",
+  "flow.status.advanced": "{step} complete. {count} of 6 local steps complete.",
+  "flow.status.finished": "{step} complete. Prototype run finished. No external action was taken.",
+  "flow.status.inspectedComplete": "Inspecting {step}. Local result complete.",
+  "flow.status.inspectedPreview": "Inspecting {step}. Preview. This stage has not run.",
+  "flow.node.inspecting": " / INSPECTING"
+}

@@ -1,0 +1,28 @@
+{
+  "i18n.changed": "English selected.",
+  "i18n.error": "Language could not be loaded. Please try again.",
+  "visual.defaultWord": "IDEA",
+  "visual.canvasLabel": "{word} constructed from dimensional typographic elements",
+  "visual.amount": "{amount} percent assembled",
+  "visual.possibility": "POSSIBILITY",
+  "visual.structure": "STRUCTURE",
+  "visual.precision": "PRECISION",
+  "visual.reduced": "Reduced motion",
+  "visual.paused": "Motion paused",
+  "visual.pause": "Pause motion",
+  "visual.signalStatic": "Static alternative",
+  "visual.signalFallback": "A typographic alternative for this device.",
+  "visual.signalLive": "Rendered live. No video. No pre-recorded sequence.",
+  "visual.signalGlobalPause": "Motion paused globally",
+  "visual.signalResume": "Resume motion ▷",
+  "visual.signalPause": "Pause motion Ⅱ",
+  "visual.signalReduced": "Reduced motion —",
+  "visual.signalEnergy": "{amount} percent energy",
+  "visual.signalModes": [
+    "01 / FIELD",
+    "02 / ECHO",
+    "03 / CONTOUR"
+  ],
+  "visual.initialPercent": "100%",
+  "signal.initialPercent": "45%"
+}

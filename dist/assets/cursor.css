@@ -1,0 +1,32 @@
+/* A/L instrument: an exact point, two registration corners, one directional slash. */
+.al-cursor{--al-cursor-ready:1;--cursor-ink:#f1f1e9;--cursor-accent:#ff5532;--cursor-halo:#111210;position:fixed;inset:0;z-index:10000;pointer-events:none;overflow:hidden;visibility:hidden;display:none;contain:strict}
+.al-cursor,.al-cursor *{pointer-events:none!important;user-select:none}
+.al-cursor[data-visible="true"]{visibility:visible}
+.al-cursor[data-tone="light"],.al-cursor[data-tone="accent"]{--cursor-ink:#111210;--cursor-accent:#ae3018;--cursor-halo:#f1f1e9}
+.al-cursor[data-tone="accent"]{--cursor-accent:#111210}
+.al-cursor-point,.al-cursor-trail{position:absolute;top:0;left:0;width:0;height:0;color:var(--cursor-ink);will-change:transform}
+.al-cursor-point:before{content:"";position:absolute;width:3px;height:3px;left:-1.5px;top:-1.5px;background:currentColor;box-shadow:0 0 1px 1px var(--cursor-halo)}
+.al-cursor-frame{position:absolute;width:26px;height:26px;left:-13px;top:-13px;overflow:visible;fill:none;stroke:currentColor;stroke-width:1;filter:drop-shadow(0 0 .6px var(--cursor-halo));transition:transform 160ms cubic-bezier(.2,.65,.3,1)}
+.al-cursor-slash{stroke:var(--cursor-accent);stroke-width:1.5;opacity:0;transition:opacity 120ms}
+.al-cursor-guides{stroke:var(--cursor-accent);opacity:0;transition:opacity 120ms}
+.al-cursor[data-mode="hover"] .al-cursor-frame,.al-cursor[data-mode="label"] .al-cursor-frame{transform:scale(1.1)}
+.al-cursor[data-mode="hover"] .al-cursor-slash,.al-cursor[data-mode="label"] .al-cursor-slash,.al-cursor[data-mode="target"] .al-cursor-slash{opacity:1}
+.al-cursor[data-mode="target"] .al-cursor-frame{transform:scale(1.2)}
+.al-cursor[data-mode="target"] .al-cursor-guides{opacity:1}
+.al-cursor[data-pressed="true"] .al-cursor-frame{transform:scale(.94)}
+.al-cursor-label{position:absolute;left:21px;top:-11px;display:flex;align-items:center;gap:7px;padding:5px 7px 5px 5px;white-space:nowrap;background:var(--cursor-halo);color:var(--cursor-ink);font:11px/1 'Courier New',monospace;letter-spacing:.07em;opacity:0;transform:translateX(-3px);transition:opacity 100ms,transform 160ms}
+.al-cursor-label:before{content:"/";font-size:13px;line-height:10px;color:var(--cursor-accent)}
+.al-cursor[data-mode="label"] .al-cursor-label{opacity:1;transform:translateX(0)}
+.al-cursor[data-side="left"] .al-cursor-label{left:auto;right:21px}
+.al-cursor[data-low="true"] .al-cursor-label{top:12px}
+.al-cursor[data-bottom="true"] .al-cursor-label{top:auto;bottom:12px}
+.al-cursor[data-calm="true"] *{transition:none!important}
+.al-cursor[data-calm="true"] .al-cursor-frame{transform:none}
+.al-cursor[data-calm="true"] .al-cursor-guides{opacity:0}
+/* Native cursors are only suppressed after a real mouse event and a visible overlay. */
+@media (hover:hover) and (pointer:fine) and (forced-colors:none),(any-hover:hover) and (any-pointer:fine) and (forced-colors:none){
+  .al-cursor{display:block}
+  html[data-al-cursor="active"],html[data-al-cursor="active"] body,html[data-al-cursor="active"] body *{cursor:none!important}
+}
+.al-cursor[hidden]{display:none!important}
+@media print{.al-cursor{display:none!important}}
