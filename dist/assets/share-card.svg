@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
-<title id="title">ATASHALCI LABS — Websites with character.</title>
-<desc id="description">Cream paper, indigo editorial typography and a vermillion flower for an independent web design and development studio.</desc>
-<style>@font-face{font-family:Fraunces;src:url('fonts/fraunces.ttf')}text{font-family:Fraunces,Georgia,serif}</style>
-<rect width="1200" height="630" fill="#f2ebe6"/>
-<text x="60" y="78" fill="#160572" font-size="40">Atashalci Labs.</text>
-<path d="M60 112H1140" stroke="#160572"/>
-<text x="60" y="253" fill="#160572" font-size="88">Websites with</text>
-<text x="60" y="360" fill="#b63820" font-size="100">character.</text>
-<g fill="#d64e2e"><circle cx="990" cy="233" r="40"/><circle cx="1030" cy="250" r="40"/><circle cx="1048" cy="290" r="40"/><circle cx="1030" cy="330" r="40"/><circle cx="990" cy="347" r="40"/><circle cx="950" cy="330" r="40"/><circle cx="931" cy="290" r="40"/><circle cx="950" cy="250" r="40"/></g>
-<circle cx="990" cy="290" r="37" fill="#160572"/>
-<rect y="478" width="1200" height="152" fill="#160572"/>
-<text x="60" y="548" fill="#f2ebe6" font-size="32">Independent web design &amp; development</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description"><title id="title">Atashalci Labs — Good websites. Made for your world.</title><desc id="description">Heavy cream serif lettering and teal supporting copy on a full indigo canvas.</desc><style>@font-face{font-family:Fraunces;src:url('fonts/fraunces-black.ttf')}text{font-family:Fraunces,Georgia,serif;font-weight:900}</style><rect width="1200" height="630" fill="#160572"/><g fill="#f8f3ef"><text x="45" y="55" font-size="30">Atashalci</text><text x="108" y="81" font-size="30">Labs.</text><text x="600" y="270" font-size="77" text-anchor="middle">Good websites.</text><text x="600" y="358" font-size="77" text-anchor="middle">Made for your world.</text></g><text x="600" y="431" fill="#20ceb0" font-size="33" text-anchor="middle">Designed with character. Built with care.</text></svg>

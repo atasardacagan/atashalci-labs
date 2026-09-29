@@ -42,3 +42,19 @@ The social preview is a separate native type-and-shape composition, 1200 × 630.
 - Evidence is saved outside the repository in ../atashalci-labs-review/atelier-redesign/.
 - These are desktop Chrome viewport tests, not claims of physical iPhone, Safari or Firefox certification.
 
+## Correction after inspecting the live reference
+
+The user explicitly requested visiting and scrolling the real Handsome Frank homepage because the first implementation diverged from the intended reference. We inspected https://www.handsomefrank.com/ at desktop and mobile widths, scrolled through its introduction, illustrator gallery, full-width stories, paired colored features and lower-page modules, and opened the full-screen navigation. Video elements reported readyState 0 and did not play in this session; no claim is made to have watched those unavailable clips.
+
+The implementation was then substantially corrected:
+
+- Full-screen indigo opening, centered heavy serif headline and teal supporting line. The floral hero is no longer displayed.
+- Fraunces Black replaces the thin regular display treatment. The supplied reference lists Fraunces as a compatible alternative; no proprietary font was copied.
+- A persistent studio wordmark, EN/TR links and circular teal menu replace the conventional horizontal navigation. The menu opens into a full-screen typographic layout; Escape, focus containment, background inertness and scroll locking are implemented.
+- A concise centered introduction leads directly into three original flat graphic service illustrations. Native disclosure controls expose the supporting service copy.
+- Web studies use their full colored backgrounds, with large serif headings and integrated artwork instead of nested panels. Pink, teal, yellow, peach and green scenes form a continuous page.
+- Studio, process and contact are shortened into large editorial color sections. Website creation remains the service focus. No real client commissions are implied.
+- Independent surface sampling keeps the fixed logo and language control legible across different backgrounds. Small matching backplates prevent text collisions while scrolling.
+- The updated typography was checked in both languages at 1920, 1440, 1366, 1280, 1024, 768, 430, 390 and 375 pixels. No measured horizontal overflow or clipped headings, paragraphs or buttons. Native service disclosures and all three study states survived language changes. Menu open/close, Escape and background inertness were checked in-browser.
+
+The reference supplies composition, scale and interaction direction; Atashalci Labs uses its own copy, wordmark and native graphic compositions. The previously generated garden remains in source for reversibility but is not requested by the current homepage.

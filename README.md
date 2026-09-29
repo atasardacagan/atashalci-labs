@@ -1,6 +1,6 @@
 # ATASHALCI LABS
 
-An independent web design and development studio in Istanbul. The website uses a warm cream and indigo editorial design, an original illustrated hero and three clearly disclosed, self-initiated web interface studies. It does not present invented client projects, testimonials or commercial results.
+An independent web design and development studio in Istanbul. The website uses a cream and indigo editorial design, a full-screen typographic hero and three clearly disclosed, self-initiated web interface studies. It does not present invented client projects, testimonials or commercial results.
 
 Live: [English](https://atasardacagan.github.io/atashalci-labs/) · [Türkçe](https://atasardacagan.github.io/atashalci-labs/tr/). [Repository](https://github.com/atasardacagan/atashalci-labs).
 
@@ -26,8 +26,8 @@ Open http://127.0.0.1:4187/ or http://127.0.0.1:4187/tr. Reuse a running server 
 | `dist/assets/atelier.js` | Menu, editorial cycling, lighting/mood controls and clipboard sharing |
 | `dist/assets/i18n.js`, `locale-preference.js` | In-place localization, URLs, metadata and explicit preference |
 | `dist/assets/cursor.js`, `cursor.css` | Adaptive cursor with touch and reduced-motion handling |
-| `dist/assets/images/atelier-garden.webp` | Original generated hero artwork |
-| `dist/assets/fonts/` | Self-hosted Fraunces and SIL Open Font License |
+| `dist/assets/images/atelier-garden.webp` | Retained artwork from the first draft; not loaded by the current page |
+| `dist/assets/fonts/` | Self-hosted Fraunces Black and SIL Open Font License |
 | `dist/assets/share-card.png`, `share-card.svg` | Social preview and editable type/shape composition |
 | `scripts/build.py`, `check.py`, `serve.py` | Static rendering, validation and local preview |
 | `docs/ATELIER-REDESIGN.md` | Current redesign decisions, asset provenance and QA |
@@ -35,7 +35,7 @@ Open http://127.0.0.1:4187/ or http://127.0.0.1:4187/tr. Reuse a running server 
 
 Edit templates and `locales/`, then rebuild. HTML and `dist/assets/locales/` are generated. CSS, JavaScript, fonts and images in `dist/assets/` are authored source: do not delete this directory as a disposable bundle.
 
-Previous AI Operations, Flow, Signal and direction assets remain as retained source, but their controllers and styles are not loaded by the current homepage. Older audit documents describe those previous versions. The current implementation is documented in `docs/ATELIER-REDESIGN.md`.
+Previous AI Operations, Flow, Signal and direction assets remain as retained source, but their controllers and styles are not loaded by the current homepage. Older audit documents describe those previous versions. The current implementation and subsequent live-reference correction are documented in `docs/ATELIER-REDESIGN.md`.
 
 ## Website studies
 
