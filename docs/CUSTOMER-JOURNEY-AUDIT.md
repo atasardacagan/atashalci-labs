@@ -126,7 +126,7 @@ Each perspective was revisited after the revisions. Root review completed the pa
 - With coarse-pointer/touch emulation, the desktop custom cursor was inactive. Language changes and lab controls continued to work.
 - One **synthetic local loading observation**, at 390×844 with cache disabled, 150ms network latency, a 200,000-byte/s download limit and 4× CPU slowdown, recorded first contentful paint at **920ms**, the H1 as largest contentful paint at **920ms**, DOM content loaded at **1625ms**, and load at **1634ms**. No console errors or warnings were recorded during that observation. These are a single local emulation sample, not public GitHub Pages field measurements, a statistical benchmark or a speed guarantee.
 - The loading observation showed the headline/offer appearing before completion of the page load. Understanding did not require waiting for a WebGL interaction or completing an animation.
-- Temporary input/network/CPU emulation was restored after checking. The root reviewer will reset the viewport when finishing browser review.
+- Temporary input/network/CPU emulation was restored after checking. The viewport override is reset when finishing browser review.
 - The production-prefixed GitHub Pages build and validation passed, and the default local build was restored afterward. Publication verification is recorded separately below.
 - Screenshot and check artifacts are stored in `../atashalci-labs-review/customer-journeys/` relative to the repository.
 
@@ -146,6 +146,11 @@ Each perspective was revisited after the revisions. Root review completed the pa
 
 ## Publication verification
 
-The local implementation, four revised perspectives, bilingual/responsive checks and production-prefixed build validation are complete. Root review is carrying out publication through the existing GitHub Pages workflow.
+Implementation revision `1f631e2266e0c8623151e6e34cf5737dc3e8a32c` was published successfully through [GitHub Pages workflow run 36522268701](https://github.com/atasardacagan/atashalci-labs/actions/runs/36522268701) on 29 September 2026. The workflow rebuilt and validated the bilingual site before deployment.
 
-Pending this final entry only: record the deployed commit, successful workflow run and live EN/TR verification. **This report does not yet claim that the revised public deployment has been verified.**
+Public-browser verification confirmed the new opening, all three sharing controls, updated Turkish contact guidance and formal default contact wording. Copying FLOW produced the actual clipboard payloads `https://atasardacagan.github.io/atashalci-labs/#lab-002` and `https://atasardacagan.github.io/atashalci-labs/tr/#lab-002`. The previous success message cleared on language change. Both public routes returned HTTP 200, and the deployed interaction/style assets matched the reviewed local files.
+
+- [English](https://atasardacagan.github.io/atashalci-labs/)
+- [Turkish](https://atasardacagan.github.io/atashalci-labs/tr/)
+
+Subsequent documentation-only commits do not change this tested site implementation. There is no pending implementation or publication step in this audit. Founder-domain recovery and future evidence of genuine completed work remain external/content dependencies, not claims added by this revision.
