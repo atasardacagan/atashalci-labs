@@ -105,7 +105,7 @@ def head(messages, locale, error=False):
     parts = [
         '<meta charset="utf-8">',
         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-        '<meta name="theme-color" content="#111210">',
+        '<meta name="theme-color" content="#f2ebe6">',
         f'<script src="/assets/locale-preference.js" data-en-path="{e(LOCALES["en"])}" data-tr-path="{e(LOCALES["tr"])}"></script>',
         f'<title data-i18n="{title_key}">{e(title)}</title>',
         f'<meta name="description" content="{e(description)}" data-i18n-attrs="content:{description_key}">',
@@ -113,7 +113,7 @@ def head(messages, locale, error=False):
     ]
     if error:
         parts.append('<meta name="robots" content="noindex">')
-        styles = ("site", "cursor")
+        styles = ("atelier", "cursor")
     else:
         url = ORIGIN + LOCALES[locale]
         image = ORIGIN + asset_url("/assets/share-card.png")
@@ -137,7 +137,7 @@ def head(messages, locale, error=False):
         ])
         for name, key in [("twitter:title", title_key), ("twitter:description", description_key), ("twitter:image:alt", "static.meta.share_alt")]:
             parts.append(f'<meta name="{name}" content="{e(messages[key])}" data-i18n-attrs="content:{key}">')
-        styles = ("site", "direction", "experiments", "cursor")
+        styles = ("atelier", "cursor")
     parts.extend(f'<link rel="stylesheet" href="/assets/{style}.css">' for style in styles)
     return "".join(parts)
 

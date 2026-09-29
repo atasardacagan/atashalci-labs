@@ -204,7 +204,7 @@ for locale, route in LOCALES.items():
     assert 'noindex' in error_page.metadata.get('robots','') and not error_page.canonicals
     assert error_page.title_text == catalogs[locale]['static.error.title']
     assert error_page.metadata['description'] == catalogs[locale]['static.error.description']
-    disclosure = re.findall(r'<span>(.*?)</span>', catalogs[locale]['static.lab_masthead.text'])[-1]
+    disclosure = catalogs[locale]['atelier.studies.disclosure']
     assert disclosure and page.visible_html.count(disclosure) == 3, f'Every {locale} lab must be labeled'
 
 assert "Sitemap: " + ORIGIN + BASE_PATH + "/sitemap.xml" in (DIST / "robots.txt").read_text()
@@ -212,17 +212,18 @@ assert "Sitemap: " + ORIGIN + BASE_PATH + "/sitemap.xml" in (DIST / "robots.txt"
 # Content boundaries are part of this studio's public contract.
 home = homepage.visible_html
 assert home.count("SELF-INITIATED / LAB EXPERIMENT / PROTOTYPE") == 3, "Every lab must be labeled"
-assert "Self-initiated experiments exploring software, AI, automation and digital interaction." in home
+assert "Self-initiated website explorations." in home
+assert "AI OPERATIONS" not in home and "ops-workspace" not in home, "The homepage must focus on web design, not the former Operations demo"
 assert not (DIST / "work").exists(), "Retired portfolio output must not remain public"
 retired = re.compile(r"collection.management|tahsilat|prim takip|payment|receivable|selected build", re.I)
 for asset in DIST.rglob("*"):
     if asset.is_file() and asset.suffix in {".html", ".js", ".mjs", ".css", ".xml", ".txt", ".json"}:
         assert not retired.search(asset.read_text()), f"Retired project reference: {asset}"
 
-assets = [p for p in (DIST / "assets").iterdir() if p.is_file()]
+assets = [p for p in (DIST / "assets").rglob("*") if p.is_file()]
 raw = sum(p.stat().st_size for p in assets)
 compressed = sum(len(gzip.compress(p.read_bytes(), mtime=0)) for p in assets)
 print(f"Passed: {len(pages)} pages, {references} local references, all ID relationships, social metadata and asset fingerprints.")
 print(f"Locales: {len(catalogs['en'])} paired keys; recursive structures and interpolation match; both routes and all hreflang relationships validated.")
 print(f"Runtime: {len(runtime_keys)} literal keys and computed key families checked; {len(module_imports)} local module imports resolve with a single locale runtime URL.")
-print(f"Assets: {raw:,} bytes raw; {compressed:,} bytes with gzip (local size estimate).")
+print(f"Assets: {raw:,} bytes raw; {compressed:,} bytes with gzip (entire asset directory, including retained legacy assets; not initial transfer size).")
