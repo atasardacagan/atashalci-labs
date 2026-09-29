@@ -93,3 +93,59 @@ renderFlow();
 onLocaleChange(renderFlow);
 $('#lab-002').querySelectorAll('button[inert],select[inert]').forEach(control => control.removeAttribute('inert'));
 $('#lab-002').setAttribute('data-flow-ready', '');
+
+// Share the experiment itself, not a claim to preserve its local prototype state.
+document.querySelectorAll('[data-share-experiment]').forEach(button => {
+  const region = button.closest('.experiment-share');
+  const status = region.querySelector('[role="status"]');
+  const fallback = region.querySelector('input');
+  let outcome = '', attempt = 0;
+  const experimentUrl = () => {
+    const url = new URL(location.href);
+    url.search = '';
+    url.hash = button.dataset.shareExperiment;
+    return url.href;
+  };
+  function renderShare() {
+    status.textContent = outcome ? t(`static.journey.share_${outcome}`) : '';
+    fallback.hidden = outcome !== 'manual';
+    fallback.value = experimentUrl();
+  }
+  button.addEventListener('click', async () => {
+    const currentAttempt = ++attempt;
+    const url = experimentUrl();
+    button.disabled = true;
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(url);
+      if (currentAttempt !== attempt) return;
+      outcome = 'copied';
+    } catch {
+      if (currentAttempt !== attempt) return;
+      outcome = 'manual';
+    } finally {
+      if (currentAttempt === attempt) {
+        button.disabled = false;
+        renderShare();
+        if (outcome === 'manual') {
+          fallback.focus({ preventScroll: true });
+          fallback.select();
+        }
+      }
+    }
+  });
+  fallback.addEventListener('click', () => fallback.select());
+  onLocaleChange(() => {
+    // A pending copy can still finish for the previous language. Do not report
+    // that the newly selected language's URL was copied when it was not.
+    if (button.disabled) {
+      attempt++;
+      button.disabled = false;
+      outcome = '';
+    }
+    if (outcome === 'copied') outcome = '';
+    renderShare();
+  });
+  renderShare();
+  region.hidden = false;
+});

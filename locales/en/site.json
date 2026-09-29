@@ -3,7 +3,7 @@
   "site.menuClose": "Close",
   "site.capabilities": {
     "products": {
-      "purpose": "The thing your business needs next.",
+      "purpose": "Software for your customers. Tools for your team.",
       "items": [
         "SaaS platforms",
         "Custom software",
@@ -11,10 +11,10 @@
         "Internal business tools",
         "Product development"
       ],
-      "detail": "From an early idea to the software people use every day. We shape the product, build it and make room for what comes next."
+      "detail": "We turn product ideas into SaaS applications and replace disconnected spreadsheets with internal tools shaped around your workflow."
     },
     "intelligence": {
-      "purpose": "Intelligence inside the work.",
+      "purpose": "Less manual handoff. More considered action.",
       "items": [
         "AI-powered products",
         "AI agents",
@@ -23,10 +23,10 @@
         "Business automation",
         "API integrations"
       ],
-      "detail": "Connect information to action. We build agents, language-model systems and workflows around the decisions your business actually needs to make."
+      "detail": "We connect knowledge, CRM and tasks through AI-assisted workflows, defining which steps can run automatically and which need human review."
     },
     "experiences": {
-      "purpose": "The experience is part of the product.",
+      "purpose": "A clear story. A distinctive experience.",
       "items": [
         "Premium websites",
         "Interactive websites",
@@ -34,10 +34,10 @@
         "Motion design",
         "UI / UX design"
       ],
-      "detail": "Make complex things feel intuitive and useful things feel distinctive. Interfaces, websites and digital experiences with a clear point of view."
+      "detail": "Websites and interfaces that make your offer understandable, with considered typography, interaction and 3D where they serve the experience."
     },
     "engineering": {
-      "purpose": "The whole thing has to work.",
+      "purpose": "From a working idea to a connected system.",
       "items": [
         "MVP development",
         "Full-stack development",
@@ -45,7 +45,7 @@
         "System integrations",
         "Infrastructure"
       ],
-      "detail": "From the first working version to a connected system. Clear architecture, deliberate testing and a foundation you can keep building on."
+      "detail": "We shape the architecture, build the application and connect the APIs, then test the full flow and prepare the software for release."
     }
   },
   "site.production": [

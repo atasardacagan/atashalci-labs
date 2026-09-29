@@ -3,7 +3,7 @@
   "site.menuClose": "Kapat",
   "site.capabilities": {
     "products": {
-      "purpose": "İşinizin bir sonraki ihtiyacı.",
+      "purpose": "Müşteriniz için ürün. Ekibiniz için araç.",
       "items": [
         "SaaS platformları",
         "Özel yazılım",
@@ -11,10 +11,10 @@
         "Şirket içi araçlar",
         "Ürün geliştirme"
       ],
-      "detail": "İlk fikirden her gün kullanılan yazılıma. Ürünü şekillendirir, geliştirir ve bir sonraki adım için alan açarız."
+      "detail": "Ürün fikirlerini SaaS uygulamalarına dönüştürür, dağınık tabloların yerine iş akışınıza göre tasarlanmış şirket içi araçlar geliştiririz."
     },
     "intelligence": {
-      "purpose": "İşin içinde zekâ.",
+      "purpose": "Daha az manuel aktarım. Daha bilinçli adımlar.",
       "items": [
         "AI destekli ürünler",
         "AI ajanları",
@@ -23,10 +23,10 @@
         "İş süreçleri otomasyonu",
         "API entegrasyonları"
       ],
-      "detail": "Bilgiyi eyleme bağlarız. Ajanları, dil modeli sistemlerini ve iş akışlarını işinizin gerektirdiği kararlar etrafında kurarız."
+      "detail": "Kurum bilgisini, CRM’i ve görevleri AI destekli akışlarla birleştiririz. Hangi adımların otomatik ilerleyeceğini, hangilerinin insan onayı gerektirdiğini birlikte belirleriz."
     },
     "experiences": {
-      "purpose": "Deneyim de ürünün bir parçası.",
+      "purpose": "Net bir anlatım. Özgün bir deneyim.",
       "items": [
         "Üst düzey web siteleri",
         "Etkileşimli web siteleri",
@@ -34,10 +34,10 @@
         "Hareket tasarımı",
         "UI / UX tasarımı"
       ],
-      "detail": "Karmaşık olanı anlaşılır, kullanışlı olanı kendine özgü kılarız. Net bir bakış açısıyla arayüzler, web siteleri ve dijital deneyimler tasarlarız."
+      "detail": "Ne sunduğunuzu anlaşılır kılan web siteleri ve arayüzler. Özenli tipografi, etkileşim ve deneyime katkı sağladığı yerde 3D."
     },
     "engineering": {
-      "purpose": "Her parçası birlikte çalışmalı.",
+      "purpose": "Çalışan fikirden birbirine bağlı bir sisteme.",
       "items": [
         "MVP geliştirme",
         "Full-stack geliştirme",
@@ -45,7 +45,7 @@
         "Sistem entegrasyonları",
         "Altyapı"
       ],
-      "detail": "İlk çalışan sürümden birbirine bağlı bir sisteme. Açık bir mimari, amacına uygun testler ve üzerine inşa edebileceğiniz sağlam bir temel."
+      "detail": "Mimariyi tasarlar, uygulamayı geliştirir ve API’leri bağlarız. Tüm akışı test edip yazılımı yayına hazırlarız."
     }
   },
   "site.production": [
@@ -99,7 +99,7 @@
   "site.copy.success": "Kopyalandı",
   "site.copy.status": "Adres kopyalandı.",
   "site.copy.failure": "Kopyalamak için yukarıdaki adresi seçin.",
-  "site.contact.defaultWord": "fikrini",
+  "site.contact.defaultWord": "fikrinizi",
   "site.contact.subject": "Atashalci Labs için bir fikir",
   "site.contact.wordSubject": "Atashalci Labs için bir fikir: {word}"
 }

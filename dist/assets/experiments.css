@@ -46,3 +46,10 @@
 
 .signal-touch-hint{display:none}
 @media(hover:none),(pointer:coarse){.signal-pointer-hint{display:none}.signal-touch-hint{display:inline;max-width:220px}}
+.lab-context{max-width:760px;font-size:15px;line-height:1.6;margin:-12px 0 30px;text-wrap:pretty}
+.experiment-share{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:0 24px;align-items:center;margin-top:16px}
+.experiment-share[hidden],.experiment-share-url[hidden]{display:none}
+.experiment-share .lab-text-button{justify-self:start;font-size:12px;line-height:1.5;min-height:44px;text-align:left}
+.experiment-share-status{margin:0;font-size:12px;line-height:1.6}
+.experiment-share-url{grid-column:1/-1;box-sizing:border-box;width:min(100%,760px);min-width:0;min-height:44px;border:1px solid var(--lab-line);border-radius:0;background:transparent;color:inherit;padding:10px 12px;font-size:16px;margin-top:8px}
+@media(max-width:600px){.lab-context{font-size:14px;margin:-8px 0 26px}.experiment-share{grid-template-columns:minmax(0,1fr);gap:0}.experiment-share-status:not(:empty){padding:2px 0 8px}}

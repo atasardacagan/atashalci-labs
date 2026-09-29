@@ -9,6 +9,7 @@
   <article id="lab-001" class="lab-environment lab-ops" aria-labelledby="ops-title">
     <div class="lab-masthead" data-i18n="static.lab_masthead.text">{{t:static.lab_masthead.text}}</div>
     <div class="lab-heading"><h3 id="ops-title" data-i18n="static.ops_title.text">{{t:static.ops_title.text}}</h3><div><p class="lab-disciplines" data-i18n="static.lab_disciplines.text">{{t:static.lab_disciplines.text}}</p><p data-i18n="static.lab_heading.text">{{t:static.lab_heading.text}}</p></div></div>
+    <p class="lab-context" data-i18n="static.journey.ops_context">{{t:static.journey.ops_context}}</p>
     <p class="prototype-unavailable" data-i18n="static.prototype_unavailable.text">{{t:static.prototype_unavailable.text}}</p>
     <div class="ops-workspace">
       <div class="workspace-topline" data-i18n="static.workspace_topline.text">{{t:static.workspace_topline.text}}</div>
@@ -41,11 +42,17 @@
       </div>
       <div class="workspace-footnote" data-i18n="static.workspace_footnote.text">{{t:static.workspace_footnote.text}}</div>
     </div>
+    <div class="experiment-share" hidden>
+      <button type="button" class="lab-text-button" data-share-experiment="lab-001" data-i18n="static.journey.share_label">{{t:static.journey.share_label}}</button>
+      <p id="share-status-001" class="experiment-share-status" role="status"></p>
+      <input class="experiment-share-url" type="text" readonly hidden aria-label="{{t:static.journey.share_label}}" aria-describedby="share-status-001" data-i18n-attrs="aria-label:static.journey.share_label">
+    </div>
   </article>
 
   <article id="lab-002" class="lab-environment lab-flow" aria-labelledby="flow-title">
     <div class="lab-masthead" data-i18n="static.lab_masthead.text_2">{{t:static.lab_masthead.text_2}}</div>
     <div class="lab-heading flow-heading"><h3 id="flow-title" data-i18n="static.flow_title.text">{{t:static.flow_title.text}}</h3><div><p class="lab-disciplines" data-i18n="static.lab_disciplines.text_2">{{t:static.lab_disciplines.text_2}}</p><p data-i18n="static.lab_heading.text_2">{{t:static.lab_heading.text_2}}</p></div></div>
+    <p class="lab-context" data-i18n="static.journey.flow_context">{{t:static.journey.flow_context}}</p>
     <p class="prototype-unavailable" data-i18n="static.prototype_unavailable.text_2">{{t:static.prototype_unavailable.text_2}}</p>
     <div class="flow-controls"><div class="flow-input"><label for="flow-brief" data-i18n="static.flow_input.text">{{t:static.flow_input.text}}</label><select inert id="flow-brief"><option value="automation" data-i18n="static.flow_brief.text">{{t:static.flow_brief.text}}</option><option value="product" data-i18n="static.flow_brief.text_2">{{t:static.flow_brief.text_2}}</option><option value="website" data-i18n="static.flow_brief.text_3">{{t:static.flow_brief.text_3}}</option></select></div><div class="flow-mode"><span data-i18n="static.flow_mode.text">{{t:static.flow_mode.text}}</span><div role="group" aria-label="{{t:static.flow_mode.aria_label}}" data-i18n-attrs="aria-label:static.flow_mode.aria_label"><button inert data-flow-mode="manual" aria-pressed="true" data-i18n="static.flow_mode.text_2">{{t:static.flow_mode.text_2}}</button><button inert data-flow-mode="automatic" aria-pressed="false" data-i18n="static.flow_mode.text_3">{{t:static.flow_mode.text_3}}</button></div></div><button inert id="flow-run" class="lab-action">{{t:static.flow_run.text}}</button><button inert id="flow-reset" class="lab-text-button" data-i18n="static.flow_reset.text">{{t:static.flow_reset.text}}</button></div>
     <p class="flow-instruction" id="flow-instruction">{{t:static.flow_instruction.text}}</p>
@@ -59,14 +66,25 @@
     </ol>
     <div class="flow-inspector"><div class="flow-current"><span id="flow-inspect-number" aria-hidden="true">01</span><p id="flow-inspect-label">{{t:static.flow_inspect_label.text}}</p></div><div class="flow-payload" id="flow-payload" role="region" aria-labelledby="flow-payload-title" tabindex="0"><p class="lab-label" id="flow-payload-state">{{t:static.flow_payload_state.text}}</p><h4 id="flow-payload-title">{{t:static.flow_payload_title.text}}</h4><dl id="flow-payload-fields"><div><dt>{{t:static.flow_payload_fields.text}}</dt><dd>{{t:static.flow_payload_fields.text_2}}</dd></div><div><dt>{{t:static.flow_payload_fields.text_3}}</dt><dd>{{t:static.flow_payload_fields.text_4}}</dd></div></dl></div><div class="flow-log"><span class="lab-label" data-i18n="static.lab_label.text_10">{{t:static.lab_label.text_10}}</span><ol id="flow-log-list"><li>{{t:static.flow_log_list.text}}</li></ol></div></div>
     <div class="flow-footer"><p id="flow-status" role="status" aria-live="polite">{{t:static.flow_status.text}}</p><span data-i18n="static.flow_footer.text">{{t:static.flow_footer.text}}</span></div>
+    <div class="experiment-share" hidden>
+      <button type="button" class="lab-text-button" data-share-experiment="lab-002" data-i18n="static.journey.share_label">{{t:static.journey.share_label}}</button>
+      <p id="share-status-002" class="experiment-share-status" role="status"></p>
+      <input class="experiment-share-url" type="text" readonly hidden aria-label="{{t:static.journey.share_label}}" aria-describedby="share-status-002" data-i18n-attrs="aria-label:static.journey.share_label">
+    </div>
   </article>
 
   <article id="lab-003" class="lab-environment lab-signal" aria-labelledby="signal-title">
     <div class="lab-masthead" data-i18n="static.lab_masthead.text_3">{{t:static.lab_masthead.text_3}}</div>
     <div class="signal-heading"><div><h3 id="signal-title" data-i18n="static.signal_title.text">{{t:static.signal_title.text}}</h3><p class="lab-disciplines" data-i18n="static.lab_disciplines.text_3">{{t:static.lab_disciplines.text_3}}</p></div><p data-i18n="static.signal_heading.text">{{t:static.signal_heading.text}}</p></div>
+    <p class="lab-context" data-i18n="static.journey.signal_context">{{t:static.journey.signal_context}}</p>
     <p class="prototype-unavailable" data-i18n="static.prototype_unavailable.text_3">{{t:static.prototype_unavailable.text_3}}</p>
     <div class="signal-stage" id="signal-stage" data-cursor="target"><canvas id="signal-canvas" role="img" aria-label="{{t:static.signal_canvas.aria_label}}" data-i18n-attrs="aria-label:static.signal_canvas.aria_label"></canvas><div class="signal-fallback" aria-hidden="true" data-i18n="static.signal_fallback.text">{{t:static.signal_fallback.text}}</div><div class="signal-coordinate signal-coordinate-top"><span data-i18n="static.signal_coordinate.text">{{t:static.signal_coordinate.text}}</span><span id="signal-mode-label">{{t:static.signal_mode_label.text}}</span></div><div class="signal-coordinate signal-coordinate-bottom" data-i18n="static.signal_coordinate.text_2">{{t:static.signal_coordinate.text_2}}</div></div>
     <div class="signal-console" inert><div class="signal-modes" role="group" aria-label="{{t:static.signal_modes.aria_label}}" data-i18n-attrs="aria-label:static.signal_modes.aria_label"><button data-signal-mode="0" aria-pressed="true" data-i18n="static.signal_modes.text">{{t:static.signal_modes.text}}</button><button data-signal-mode="1" aria-pressed="false" data-i18n="static.signal_modes.text_2">{{t:static.signal_modes.text_2}}</button><button data-signal-mode="2" aria-pressed="false" data-i18n="static.signal_modes.text_3">{{t:static.signal_modes.text_3}}</button></div><div class="signal-energy"><label for="signal-energy"><span data-i18n="static.signal_energy.text">{{t:static.signal_energy.text}}</span><output id="signal-energy-value" for="signal-energy">{{t:signal.initialPercent}}</output></label><input id="signal-energy" type="range" min="0" max="100" value="45"></div><button id="signal-pause" class="lab-text-button" aria-pressed="false">{{t:static.signal_pause.text}}</button></div>
     <p class="signal-caption" data-i18n="static.signal_caption.text">{{t:static.signal_caption.text}}</p>
+    <div class="experiment-share" hidden>
+      <button type="button" class="lab-text-button" data-share-experiment="lab-003" data-i18n="static.journey.share_label">{{t:static.journey.share_label}}</button>
+      <p id="share-status-003" class="experiment-share-status" role="status"></p>
+      <input class="experiment-share-url" type="text" readonly hidden aria-label="{{t:static.journey.share_label}}" aria-describedby="share-status-003" data-i18n-attrs="aria-label:static.journey.share_label">
+    </div>
   </article>
 </section>

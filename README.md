@@ -42,6 +42,7 @@ The build uses Python's standard library. It renders English and Turkish homepag
 | `dist/assets/share-card.svg`, `share-card.png` | Editable social composition and its 1200 × 630 PNG export. |
 | `scripts/build.py`, `check.py`, `serve.py` | Dependency-free renderer, output validation and local preview. |
 | `docs/PRODUCTION-AUDIT.md` | Final production audit, fixes, evidence and validation boundaries. |
+| `docs/CUSTOMER-JOURNEY-AUDIT.md` | Four simulated visitor journeys, trust/positioning changes, qualitative comparison and browser checks. |
 | `docs/REDESIGN-AUDIT.md` | Current scope, honesty boundaries and verification record. |
 | `.github/workflows/deploy-pages.yml` | Validation, production build and automatic GitHub Pages deployment. |
 
