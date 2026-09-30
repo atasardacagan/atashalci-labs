@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <title>A developer composing a website in an oversized code window</title>
+  <path d="M49 744h703" stroke="#160572" stroke-width="3"/>
+  <path d="m264 298 414-48 42 360-414 48z" fill="#f2ebe6" stroke="#160572" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m264 298 414-48 7 57-414 48z" fill="#d64e2e" stroke="#160572" stroke-width="3"/>
+  <path d="m290 321 11-1m15-2 11-1m15-2 11-1" stroke="#f2ebe6" stroke-width="8" stroke-linecap="round"/>
+  <path d="m375 339 20 174m-7 91 293-34" stroke="#160572" stroke-width="2"/>
+  <path d="m299 388 38-5m-35 33 47-5m-44 33 34-4m-31 32 48-5m-44 34 26-3m-24 30 47-5m-45 33 38-4m-34 33 48-6" stroke="#160572" stroke-width="5"/>
+  <path d="m412 381 48-5m-44 33 18-2m17-2 102-12m-131 44 58-7m-54 36 102-12m-98 40 25-3m17-2 111-12m-148 46 79-9" stroke="#160572" stroke-width="9"/>
+  <path d="m480 373 107-12m-91 71 108-13m-62 40 78-9m-104 89 81-10" stroke="#d64e2e" stroke-width="9"/>
+  <path d="m419 411 12-1m117 102 69-8" stroke="#006f8a" stroke-width="9"/>
+  <path d="m564 579 102-12" stroke="#ff7701" stroke-width="10"/>
+  <path d="M186 709c67-9 104-33 140-50 55-22 113 32 96 59-17 24-78 21-121 18l-85-4z" fill="#160572"/>
+  <path d="M161 655c-28 21-49 42-47 64 1 22 38 27 79 20l124-13-2-26-89-3 35-32z" fill="#d64e2e" stroke="#160572" stroke-width="3"/>
+  <path d="m308 700 27-1 22 10c13 7 12 21 3 23l-47-6z" fill="#f2ebe6" stroke="#160572" stroke-width="3"/>
+  <path d="M162 489c-37 43-41 95-29 156 7 35 88 49 130 11l-3-93 55 30 71-24-8-23-64 11-49-57c-25-34-79-33-103-11Z" fill="#ff7701" stroke="#160572" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M168 526c-5 40 7 72 38 77l84 8" stroke="#160572" stroke-width="3"/>
+  <path d="m206 600 67-19 38 12 15 19-21 11-82-5" fill="#ff7701" stroke="#160572" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m283 581 24-7 28 5 8 15-30-2-15 10" fill="#e29675" stroke="#160572" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m377 547 28-13 26 4 13 14-14 8-38 5" fill="#e29675" stroke="#160572" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m261 602 94-9 52 66-105 13z" fill="#006f8a" stroke="#160572" stroke-width="3"/>
+  <path d="m302 671 106-12 15 11-115 15z" fill="#f2ebe6" stroke="#160572" stroke-width="3"/>
+  <path d="m180 487-2-36 44-12 12 52c-9 20-38 17-54-4Z" fill="#e29675" stroke="#160572" stroke-width="3"/>
+  <path d="M170 421c0-31 51-48 72-18l2 30 12 14-16 5-6 25c-27 7-66-20-64-56Z" fill="#e29675" stroke="#160572" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M166 440c-23-25-11-62 17-62 23-22 52-5 59 19l-36 11-5 29-18-6-4 19Z" fill="#160572"/>
+  <path d="M203 427h44m-31 2v16h19v-16" stroke="#160572" stroke-width="4"/>
+  <path d="m177 393-22 37c-7 21 3 48 20 52m-7-44c-15-2-13 33 3 34" stroke="#24e3dc" stroke-width="9" stroke-linecap="round"/>
+  <path d="m718 741-24-94h-58l-17 94z" fill="#d64e2e" stroke="#160572" stroke-width="3"/>
+  <path d="M663 650V479" stroke="#160572" stroke-width="4"/>
+  <path d="M663 580c-55-24-52-81-32-74 18 7 32 54 32 74m1 26c72-20 67-79 42-59-12 9-36 40-42 59m-1 23c-55-6-65-45-41-41 13 2 30 21 41 41m0-92c53-33 47-84 27-68-12 11-24 40-27 68" fill="#24e3dc" stroke="#160572" stroke-width="3"/>
+  <path d="m100 294 27-15 14 18 24-1 4 23-18 17-1 24-23 1-16-17-23-2-1-23z" fill="#24e3dc" stroke="#160572" stroke-width="3"/>
+  <path d="m120 310-9 12 13 8m16-20 11 10-9 14" stroke="#160572" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m228 215 10-24m29 35 22-9m-34 50 25 5" stroke="#160572" stroke-width="4" stroke-linecap="round"/>
+</svg>

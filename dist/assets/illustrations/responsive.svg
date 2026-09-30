@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <title>Website compositions at different scales with a sculptural plant</title>
+  <path d="M45 745h710" stroke="#160572" stroke-width="3"/>
+  <path d="m92 349 459-36 23 301-459 36z" fill="#f2ebe6" stroke="#160572" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m92 349 459-36 5 53-459 36z" fill="#006f8a" stroke="#160572" stroke-width="3"/>
+  <path d="m120 374 38-3m261-21 37-3m17-1 52-4" stroke="#f2ebe6" stroke-width="7"/>
+  <path d="m143 435 164-13 11 149-164 13z" fill="#d64e2e"/>
+  <path d="M229 549c-54-2-62-21-29-29-44-18-39-40-1-26-27-36-8-52 20-21-5-42 21-45 27-4 20-35 43-23 23 16 41-12 52 12 10 25 41 12 34 37-8 28 24 30 4 46-21 14Z" fill="#e29675"/>
+  <path d="m344 431 154-12m-151 35 142-11m-140 35 116-9m-112 56 82-6m-79 30 129-10" stroke="#160572" stroke-width="8"/>
+  <path d="m359 586 114-9" stroke="#ff7701" stroke-width="10"/>
+  <path d="m326 634 8 70-74 15 1 15 172-13-1-15-79-4-6-70" fill="#160572"/>
+  <path d="m487 453 154 22-35 256-154-22z" fill="#24e3dc" stroke="#160572" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m505 478 116 17-14 104-116-16z" fill="#160572"/>
+  <path d="M559 522c-18-25-37-11-18 12-30-6-39 15-7 22-26 12-15 33 10 19-10 30 14 38 23 6 14 29 34 19 21-9 31 7 36-17 6-22 26-16 13-35-10-17 5-33-22-42-25-11Z" fill="#f2ebe6"/>
+  <path d="m487 613 106 15m-109 6 79 12m-82 10 98 14" stroke="#160572" stroke-width="6"/>
+  <path d="m481 686 40 6" stroke="#d64e2e" stroke-width="10"/>
+  <path d="m629 614 30 127h72l18-127z" fill="#ff7701" stroke="#160572" stroke-width="3"/>
+  <path d="M657 636c19 12 53 9 73 0m-66 55c13 6 44 4 61-3" stroke="#160572" stroke-width="3"/>
+  <path d="M689 616c-3-101-14-165-31-253m30 178c14-48 29-83 48-117m-57 39c-12-49-38-94-60-127" stroke="#160572" stroke-width="5" stroke-linecap="round"/>
+  <path d="M658 386c-49-11-74-83-38-67 15 6 30 33 38 67Zm15 55c53-35 65-99 34-81-15 8-28 48-34 81Zm-2 37c-64-4-100-66-63-57 18 5 45 30 63 57Zm19 72c62-11 91-72 57-61-24 8-43 36-57 61Zm-6 31c-59 0-91-41-68-43 22-2 51 30 68 43Z" fill="#006f8a" stroke="#160572" stroke-width="3"/>
+  <path d="M664 374c39-46 30-104 10-77-13 16-12 52-10 77Zm66 61c-2-38 31-76 36-50 3 21-21 40-36 50Z" fill="#24e3dc" stroke="#160572" stroke-width="3"/>
+  <path d="m234 261 118-75 75 118-119 75z" fill="#e29675" stroke="#160572" stroke-width="3"/>
+  <path d="m272 266 64-40 38 61-64 40z" fill="#160572"/>
+  <path d="m319 261 13-11 8 18 21-2-6 20 16 13-20 8-2 22-20-10-17 13-7-21-22-2 12-18-11-18 22-1z" fill="#f2ebe6"/>
+  <path d="m142 241 5-26m32 51 25-9m265-19 19-16m17 58 23 3" stroke="#160572" stroke-width="4" stroke-linecap="round"/>
+</svg>

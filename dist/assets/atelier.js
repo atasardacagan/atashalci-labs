@@ -136,6 +136,70 @@ document.querySelectorAll('[data-share-experiment]').forEach(button => {
   });
   renderShare(); region.hidden = false;
 });
-function renderLocale() { renderMenu(); renderStudies(); renderCopy(); }
+const menuPreview = document.querySelector('.menu-preview');
+if (menuPreview) {
+  const artBase = new URL('.', menuPreview.src);
+  navigation.querySelectorAll('[data-menu-art]').forEach(link => {
+    function preview() {
+      if (['designer', 'developer', 'launch', 'collaboration', 'responsive', 'editorial'].includes(link.dataset.menuArt))
+        menuPreview.src = new URL(link.dataset.menuArt + '.svg', artBase).href;
+    }
+    link.addEventListener('pointerenter', preview);
+    link.addEventListener('focus', preview);
+  });
+}
+const track = document.querySelector('.workflow-track');
+const trackButtons = [...document.querySelectorAll('[data-track-direction]')];
+function renderTrack() {
+  if (!track) return;
+  trackButtons.forEach(button => {
+    button.disabled = Number(button.dataset.trackDirection) < 0 ? track.scrollLeft < 2 : track.scrollLeft >= track.scrollWidth - track.clientWidth - 2;
+  });
+}
+if (track) {
+  trackButtons.forEach(button => button.addEventListener('click', () => {
+    track.scrollBy({ left: Number(button.dataset.trackDirection) * track.clientWidth * .85,
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }));
+  track.addEventListener('scroll', renderTrack, { passive: true });
+  new ResizeObserver(renderTrack).observe(track);
+  renderTrack();
+}
+const brief = document.querySelector('#project-brief');
+let briefState = '', invalidField = null;
+function renderBrief() {
+  if (!brief) return;
+  const status = brief.querySelector('#brief-status');
+  const draft = brief.querySelector('#brief-draft-link');
+  status.textContent = briefState ? t(briefState) : '';
+  draft.hidden = briefState !== 'reference.brief.success';
+  if (!draft.hidden) {
+    const body = ['name', 'email', 'project'].map(name => t({ name: 'reference.brief.name', email: 'reference.brief.email', project: 'reference.brief.project' }[name]) + ': ' + brief.elements[name].value.trim()).join('\n\n');
+    draft.href = 'mailto:info@atashalci.com?subject=' + encodeURIComponent(t('reference.brief.subject')) + '&body=' + encodeURIComponent(body);
+  } else draft.removeAttribute('href');
+}
+if (brief) {
+  brief.addEventListener('submit', event => {
+    event.preventDefault();
+    invalidField = null;
+    for (const name of ['name', 'email', 'project']) {
+      const field = brief.elements[name];
+      field.removeAttribute('aria-invalid'); field.removeAttribute('aria-describedby');
+      if (!invalidField && (!field.value.trim() || !field.validity.valid)) invalidField = field;
+    }
+    if (invalidField) {
+      briefState = invalidField.value.trim() && invalidField.type === 'email' ? 'reference.brief.invalidEmail' : 'reference.brief.required';
+      invalidField.setAttribute('aria-invalid', 'true'); invalidField.setAttribute('aria-describedby', 'brief-status');
+      renderBrief(); invalidField.focus();
+    } else { briefState = 'reference.brief.success'; renderBrief(); }
+  });
+  brief.addEventListener('input', () => {
+    briefState = '';
+    brief.querySelectorAll('[aria-invalid]').forEach(field => { field.removeAttribute('aria-invalid'); field.removeAttribute('aria-describedby'); });
+    renderBrief();
+  });
+  brief.hidden = false;
+}
+function renderLocale() { renderMenu(); renderStudies(); renderCopy(); renderBrief(); requestAnimationFrame(renderTrack); }
 renderLocale(); onLocaleChange(renderLocale);
 document.body.dataset.atelierReady = '';

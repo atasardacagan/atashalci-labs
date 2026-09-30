@@ -113,7 +113,7 @@ def head(messages, locale, error=False):
     ]
     if error:
         parts.append('<meta name="robots" content="noindex">')
-        styles = ("atelier", "cursor")
+        styles = ("atelier", "reference")
     else:
         url = ORIGIN + LOCALES[locale]
         image = ORIGIN + asset_url("/assets/share-card.png")
@@ -137,7 +137,7 @@ def head(messages, locale, error=False):
         ])
         for name, key in [("twitter:title", title_key), ("twitter:description", description_key), ("twitter:image:alt", "static.meta.share_alt")]:
             parts.append(f'<meta name="{name}" content="{e(messages[key])}" data-i18n-attrs="content:{key}">')
-        styles = ("atelier", "cursor")
+        styles = ("atelier", "reference")
     parts.extend(f'<link rel="stylesheet" href="/assets/{style}.css">' for style in styles)
     return "".join(parts)
 

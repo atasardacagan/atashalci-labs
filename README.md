@@ -1,6 +1,6 @@
 # ATASHALCI LABS
 
-An independent web design and development studio in Istanbul. The website uses a cream and indigo editorial design, a full-screen typographic hero and three clearly disclosed, self-initiated web interface studies. It does not present invented client projects, testimonials or commercial results.
+An independent web design and development studio in Istanbul. The website uses a cream and indigo editorial design, a full-screen typographic hero, a four-column illustrated capability gallery, full/half-width color scenes and three clearly disclosed, self-initiated web interface studies. It does not present invented client projects, testimonials or commercial results.
 
 Live: [English](https://atasardacagan.github.io/atashalci-labs/) · [Türkçe](https://atasardacagan.github.io/atashalci-labs/tr/). [Repository](https://github.com/atasardacagan/atashalci-labs).
 
@@ -20,14 +20,15 @@ Open http://127.0.0.1:4187/ or http://127.0.0.1:4187/tr. Reuse a running server 
 | --- | --- |
 | `templates/home.html`, `templates/partials/` | Shared homepage, header, hero, web studies and footer |
 | `templates/404.html` | Localized error page |
-| `locales/en/atelier.json`, `locales/tr/atelier.json` | Current web-focused editorial copy and study feedback |
+| `locales/en/atelier.json`, `locales/tr/atelier.json`, `locales/*/reference.json` | Web-focused editorial copy, capability gallery, form labels and study feedback |
 | `locales/en/static.json`, `locales/tr/static.json` | Metadata and shared labels |
-| `dist/assets/atelier.css` | Responsive cream/indigo design system |
-| `dist/assets/atelier.js` | Menu, editorial cycling, lighting/mood controls and clipboard sharing |
+| `dist/assets/atelier.css`, `reference.css` | Base illustration primitives and measured reference layout |
+| `dist/assets/atelier.js` | Menu illustration previews, study controls, workflow scrolling, email draft preparation and clipboard sharing |
 | `dist/assets/i18n.js`, `locale-preference.js` | In-place localization, URLs, metadata and explicit preference |
-| `dist/assets/cursor.js`, `cursor.css` | Adaptive cursor with touch and reduced-motion handling |
+| `dist/assets/cursor.js`, `cursor.css` | Retained historical cursor source; not loaded by the current design |
 | `dist/assets/images/atelier-garden.webp` | Retained artwork from the first draft; not loaded by the current page |
-| `dist/assets/fonts/` | Self-hosted Fraunces Black and SIL Open Font License |
+| `dist/assets/fonts/` | Self-hosted Fraunces Black, Allura wordmark and their SIL Open Font Licenses |
+| `dist/assets/illustrations/` | Six original native SVG studio illustrations |
 | `dist/assets/share-card.png`, `share-card.svg` | Social preview and editable type/shape composition |
 | `scripts/build.py`, `check.py`, `serve.py` | Static rendering, validation and local preview |
 | `docs/ATELIER-REDESIGN.md` | Current redesign decisions, asset provenance and QA |
@@ -49,7 +50,7 @@ These are interface studies, not complete client websites. Every study is labele
 
 English is the first-visit default. Turkish lives at `/tr` locally and `/tr/` on GitHub Pages. Only an explicit selection is saved in `localStorage` under `al.language`; there is no location or browser-language inference, translation API, analytics or tracking. Locale changes update visible copy, accessibility labels, document language, metadata and navigation without remounting the studies. Both languages have server-rendered HTML and reciprocal hreflang links.
 
-Company contact: `info@atashalci.com`. Studio partners: Arda Çağan Ataş and Onur Salcı. Their supplied personal domains remain preserved in template data attributes, without publishing unavailable links. No LinkedIn profile is added.
+Company contact: `info@atashalci.com`. The brief form validates locally and prepares an encoded `mailto:` link. The visitor opens the draft, reviews it and sends it from their own email app; the site has no submission endpoint or lead database. Field values are not placed in the site URL or persistent storage and survive in-place language changes. With JavaScript unavailable the form stays hidden and the direct email link remains usable. Studio partners: Arda Çağan Ataş and Onur Salcı. Their supplied personal domains remain preserved in template data attributes, without publishing unavailable links. No LinkedIn profile is added.
 
 ## Validation
 

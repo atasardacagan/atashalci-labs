@@ -58,3 +58,29 @@ The implementation was then substantially corrected:
 - The updated typography was checked in both languages at 1920, 1440, 1366, 1280, 1024, 768, 430, 390 and 375 pixels. No measured horizontal overflow or clipped headings, paragraphs or buttons. Native service disclosures and all three study states survived language changes. Menu open/close, Escape and background inertness were checked in-browser.
 
 The reference supplies composition, scale and interaction direction; Atashalci Labs uses its own copy, wordmark and native graphic compositions. The previously generated garden remains in source for reversibility but is not requested by the current homepage.
+
+
+## Measured structural revision — 30 September 2026
+
+The user requested much closer reproduction of the live reference, with only the business and information belonging to Atashalci Labs. This revision uses direct desktop/mobile measurements rather than the normalized DESIGN.md alone. The paper canvas measured #f8f3ef on the actual site.
+
+Current implementation supersedes the earlier layout and cursor notes above:
+
+- Full-height indigo hero: 80px/76px display at 1440px, 48px/45.6px on mobile, teal serif supporting line, script wordmark and circular mobile monogram.
+- Twelve illustrated capability links in four desktop columns, 40px column gaps, 60px row gaps and portrait 2:3 artwork. On mobile they become one horizontally scrolling, snapping row of 75vw tiles.
+- Reference page rhythm: two full-width scenes, paired studies, four full-width scenes, a blue brief section, paired studio/process scenes, purple interactive typography, horizontal process stories, moving illustration strip and expandable indigo footer. Desktop feature scenes are generally 50vw high and become copy followed by artwork on mobile.
+- Three-column fullscreen desktop navigation with changing illustration previews; compact mobile navigation, Escape, focus containment and inert background. Current design uses the native pointer, matching the reference interaction treatment. Retained cursor files are not loaded on either homepage or 404.
+- Localized brief validation prepares a mailto link without sending anything. Required-field errors, invalid email, prepared state, field retention, Unicode/ampersand encoding and localized draft labels are included. The public company address stays unchanged.
+- Six original SVG illustrations (designer, developer, launch, collaboration, responsive, editorial), 800×800 viewboxes, no external resources or scripts. Illustrations convey capabilities; they do not represent commissioned projects or real photographs of the partners. Retained studies keep explicit prototype disclosures.
+- Allura provides the script wordmark under its included SIL OFL. Fraunces Black remains the open display alternative, and the body stack remains system Arial/Helvetica. Proprietary reference fonts, artwork, client names and claims were not copied; the site is a close structural recreation rather than an assertion of pixel identity.
+
+Verification for this revision:
+
+- Both languages measured at 1920, 1440, 1366, 1280, 1024, 768, 430, 390 and 375px: no document horizontal overflow or measured clipping in headings, descriptions or calls to action.
+- Visual review in Chrome: desktop hero/gallery/features, fullscreen menu, studio pair and expressive study; mobile hero/gallery/menu/contact. Long TR navigation labels were shortened and overlapping studio links constrained beside the illustrations.
+- In-browser study states survived EN/TR switching. All three expressive backgrounds were explicitly checked; a :has selector accidentally matching the mood buttons was corrected to target the active demo state.
+- Form required validation focused the relevant field; a synthetic brief produced correctly encoded Turkish mailto content, retained values during language switching and stayed on the page. No email was sent or mail client opened by QA.
+- Workflow buttons moved the horizontal track, footer exposed all twelve links, menu previews changed on keyboard focus, Escape closed the menu and background inertness was confirmed.
+- Reduced-motion emulation stops the marquee. Fresh root starts in English; explicit Turkish persists after reload; localized missing-route screen was inspected. No missing loaded images or console warnings/errors were observed.
+- Existing 82 Node model/localization tests and 12 route/catalog tests pass. Static validation covers four pages, local references, current locale parity, metadata and fingerprints. These checks do not substitute for the visual browser review; no physical-device/Safari certification is claimed.
+- Current visual evidence: ../atashalci-labs-review/reference-match/. The previous screenshot set documents the superseded first adaptation.
