@@ -23,12 +23,13 @@ Open http://127.0.0.1:4187/ or http://127.0.0.1:4187/tr. Reuse a running server 
 | `locales/en/atelier.json`, `locales/tr/atelier.json`, `locales/*/reference.json` | Web-focused editorial copy, capability gallery, form labels and study feedback |
 | `locales/en/static.json`, `locales/tr/static.json` | Metadata and shared labels |
 | `dist/assets/atelier.css`, `reference.css`, `rounded.css` | Base illustration primitives, measured reference layout and rounded typography/hero refinements |
+| `dist/assets/garden.css`, `garden.js` | Hero-only botanical scene, animated original characters, motion control and reduced-motion lifecycle |
 | `dist/assets/atelier.js` | Menu illustration previews, study controls, workflow scrolling, email draft preparation and clipboard sharing |
 | `dist/assets/i18n.js`, `locale-preference.js` | In-place localization, URLs, metadata and explicit preference |
 | `dist/assets/cursor.js`, `cursor.css` | Retained historical cursor source; not loaded by the current design |
 | `dist/assets/images/atelier-garden.webp` | Retained artwork from the first draft; not loaded by the current page |
 | `dist/assets/fonts/` | Self-hosted Baloo 2 and Nunito with Latin/Latin Extended WOFF2 subsets and SIL Open Font Licenses; older fonts retained but not loaded |
-| `dist/assets/illustrations/` | Six original native SVG studio illustrations |
+| `dist/assets/illustrations/` | Eight original native SVG studio illustrations, including the hero walker and cyclist |
 | `dist/assets/share-card.png`, `share-card.svg` | Social preview and editable type/shape composition |
 | `scripts/build.py`, `check.py`, `serve.py` | Static rendering, validation and local preview |
 | `docs/ATELIER-REDESIGN.md` | Current redesign decisions, asset provenance and QA |
@@ -81,3 +82,5 @@ Run `python3 scripts/build.py` without those variables to restore root-based loc
 ## Rounded typography and opening message
 
 Baloo 2 provides the rounded display/wordmark voice; Nunito carries paragraphs and controls. Font files are served locally; no Google Fonts request happens in visitors’ browsers. The EN and TR opening speaks to the visitor’s own business, explicitly describes web design/development, and offers two real destinations: the brief (`#contact`) and a working study (`#lab-001`). The social PNG/SVG follows the same typography and message. This is a copy/design hypothesis, not a measured conversion claim.
+
+The opening also has a lightweight original garden scene: flowers bloom and sway, a flower-carrying walker and cyclist cross the lower edge, and a paper plane drifts above the headline. The scene is decorative and isolated from the content layer, pauses when the hero is out of view or the menu is open, has a visitor pause/play control, and stops completely for reduced-motion preferences. The vector characters are authored in `dist/assets/illustrations/hero-walker.svg` and `hero-cyclist.svg`; no external imagery or animation service is used.

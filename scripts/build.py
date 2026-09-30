@@ -138,6 +138,8 @@ def head(messages, locale, error=False):
         for name, key in [("twitter:title", title_key), ("twitter:description", description_key), ("twitter:image:alt", "static.meta.share_alt")]:
             parts.append(f'<meta name="{name}" content="{e(messages[key])}" data-i18n-attrs="content:{key}">')
         styles = ("atelier", "reference", "rounded")
+    if not error:
+        styles += ("garden",)
     parts.extend(f'<link rel="stylesheet" href="/assets/{style}.css">' for style in styles)
     return "".join(parts)
 
@@ -159,12 +161,12 @@ def main():
         (locale_dir / f"{locale}.json").write_text(json.dumps(messages, ensure_ascii=False, separators=(",", ":")) + "\n")
     urls = {locale: asset_url(f"/assets/locales/{locale}.json") for locale in LOCALES}
     partials = {key: (T / "partials" / f"{key.lower()}.html").read_text()
-                for key in ("HEADER", "FOOTER", "HERO", "EXPERIMENTS")}
+                for key in ("HEADER", "FOOTER", "HERO", "EXPERIMENTS", "HERO_GARDEN")}
     for locale, messages in catalogs.items():
         directory = DIST if locale == "en" else DIST / "tr"
         directory.mkdir(exist_ok=True)
         config = json.dumps({"locale": locale, "messages": messages, "urls": urls, "origin": ORIGIN, "basePath": BASE_PATH, "routes": LOCALES}, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
-        values = dict(partials, LANG=locale, LANGUAGE_SWITCHER=language_switcher(locale, messages), LOCALE_DATA='<script type="application/json" id="locale-data">' + config + '</script>', INITIAL_WORD=messages["visual.defaultWord"], CONTACT_SUBJECT=quote(messages["site.contact.subject"]))
+        values = dict(partials, GARDEN_WALKER=(DIST / "assets/illustrations/hero-walker.svg").read_text(), GARDEN_CYCLIST=(DIST / "assets/illustrations/hero-cyclist.svg").read_text(), LANG=locale, LANGUAGE_SWITCHER=language_switcher(locale, messages), LOCALE_DATA='<script type="application/json" id="locale-data">' + config + '</script>', INITIAL_WORD=messages["visual.defaultWord"], CONTACT_SUBJECT=quote(messages["site.contact.subject"]))
         for template, filename, error in [("home.html", "index.html", False), ("404.html", "404.html", True)]:
             values["HEAD"] = head(messages, locale, error)
             (directory / filename).write_text(render((T / template).read_text(), values, messages, locale))
