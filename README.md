@@ -29,7 +29,7 @@ Open http://127.0.0.1:4187/ or http://127.0.0.1:4187/tr. Reuse a running server 
 | `dist/assets/cursor.js`, `cursor.css` | Retained historical cursor source; not loaded by the current design |
 | `dist/assets/images/atelier-garden.webp` | Retained artwork from the first draft; not loaded by the current page |
 | `dist/assets/fonts/` | Self-hosted Baloo 2 and Nunito with Latin/Latin Extended WOFF2 subsets and SIL Open Font Licenses; older fonts retained but not loaded |
-| `dist/assets/illustrations/` | Eight original native SVG studio illustrations, including the hero walker and cyclist |
+| `dist/assets/illustrations/` | Ten original native SVG studio illustrations, including the hero designer, developer, walker and cyclist |
 | `dist/assets/share-card.png`, `share-card.svg` | Social preview and editable type/shape composition |
 | `scripts/build.py`, `check.py`, `serve.py` | Static rendering, validation and local preview |
 | `docs/ATELIER-REDESIGN.md` | Current redesign decisions, asset provenance and QA |
@@ -83,4 +83,4 @@ Run `python3 scripts/build.py` without those variables to restore root-based loc
 
 Baloo 2 provides the rounded display/wordmark voice; Nunito carries paragraphs and controls. Font files are served locally; no Google Fonts request happens in visitors’ browsers. The EN and TR opening speaks to the visitor’s own business, explicitly describes web design/development, and offers two real destinations: the brief (`#contact`) and a working study (`#lab-001`). The social PNG/SVG follows the same typography and message. This is a copy/design hypothesis, not a measured conversion claim.
 
-The opening also has a lightweight original garden scene: flowers bloom and sway, a flower-carrying walker and cyclist cross the lower edge, and a paper plane drifts above the headline. The scene is decorative and isolated from the content layer, pauses when the hero is out of view or the menu is open, has a visitor pause/play control, and stops completely for reduced-motion preferences. The vector characters are authored in `dist/assets/illustrations/hero-walker.svg` and `hero-cyclist.svg`; no external imagery or animation service is used.
+The opening also has a lightweight original garden scene: flowers bloom and sway, a flower-carrying walker and cyclist cross the lower edge, and a paper plane drifts above the headline. A designer arranging a webpage and a developer working on a laptop make the studio's services visible in the opening. Their brief gestures alternate with long resting intervals. The scene is decorative and isolated from the content layer, pauses when the hero is out of view or the menu is open, has a visitor pause/play control, and stops completely for reduced-motion preferences. The vector characters are authored in `dist/assets/illustrations/hero-{walker,cyclist,designer,developer}.svg`; no external imagery or animation service is used.

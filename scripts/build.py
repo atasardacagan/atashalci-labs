@@ -166,7 +166,8 @@ def main():
         directory = DIST if locale == "en" else DIST / "tr"
         directory.mkdir(exist_ok=True)
         config = json.dumps({"locale": locale, "messages": messages, "urls": urls, "origin": ORIGIN, "basePath": BASE_PATH, "routes": LOCALES}, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
-        values = dict(partials, GARDEN_WALKER=(DIST / "assets/illustrations/hero-walker.svg").read_text(), GARDEN_CYCLIST=(DIST / "assets/illustrations/hero-cyclist.svg").read_text(), LANG=locale, LANGUAGE_SWITCHER=language_switcher(locale, messages), LOCALE_DATA='<script type="application/json" id="locale-data">' + config + '</script>', INITIAL_WORD=messages["visual.defaultWord"], CONTACT_SUBJECT=quote(messages["site.contact.subject"]))
+        garden_art = {f"GARDEN_{name.upper()}": (DIST / f"assets/illustrations/hero-{name}.svg").read_text() for name in ("walker", "cyclist", "designer", "developer")}
+        values = dict(partials, **garden_art, LANG=locale, LANGUAGE_SWITCHER=language_switcher(locale, messages), LOCALE_DATA='<script type="application/json" id="locale-data">' + config + '</script>', INITIAL_WORD=messages["visual.defaultWord"], CONTACT_SUBJECT=quote(messages["site.contact.subject"]))
         for template, filename, error in [("home.html", "index.html", False), ("404.html", "404.html", True)]:
             values["HEAD"] = head(messages, locale, error)
             (directory / filename).write_text(render((T / template).read_text(), values, messages, locale))

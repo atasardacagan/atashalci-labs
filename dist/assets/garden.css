@@ -1,5 +1,5 @@
 /* An original vector garden framing the opening. Only transforms animate. */
-.atelier-hero { isolation: isolate; overflow: hidden; min-height: 840px; padding-bottom: 210px; }
+.atelier-hero { isolation: isolate; overflow: hidden; min-height: 900px; padding-top: 185px; padding-bottom: 210px; }
 .hero-content { position: relative; z-index: 1; }
 .hero-garden { position: absolute; inset: 0; z-index: 0; pointer-events: none; user-select: none; overflow: hidden; }
 .hero-garden svg { display: block; width: 100%; height: 100%; overflow: visible; }
@@ -31,9 +31,21 @@
 .garden-cyclist-wheel-back { transform-origin: 57px 171px; animation: garden-wheel 1.8s linear infinite; }
 .garden-cyclist-wheel-front { transform-origin: 224px 171px; animation: garden-wheel 1.8s linear infinite; }
 .garden-cyclist-crank { transform-origin: 128px 171px; animation: garden-wheel 1.8s linear infinite; }
-.hero-garden .garden-glider { position: absolute; left: 64%; top: 130px; width: 78px; height: 58px; animation: garden-glide 11s ease-in-out infinite alternate; animation-delay: -5s; }
+.hero-garden .garden-glider { position: absolute; left: 49%; top: 115px; width: 58px; height: 44px; animation: garden-glide 11s ease-in-out infinite alternate; animation-delay: -5s; }
+.garden-maker { position: absolute; width: 185px; aspect-ratio: 240 / 210; top: 92px; }
+.garden-maker--designer { left: 24%; }
+.garden-maker--developer { right: 23%; }
+.garden-maker > svg { animation: garden-maker-float 12s ease-in-out infinite; }
+.garden-maker--developer > svg { animation-delay: -5s; }
+/* Brief gestures, with long resting intervals: the headline keeps attention. */
+.garden-design-tile { animation: garden-design-arrange 14s ease-in-out infinite; }
+.garden-designer-arm { transform-box: view-box; transform-origin: 76px 92px; animation: garden-pencil 14s ease-in-out infinite; }
+.garden-design-cursor { animation: garden-design-point 14s ease-in-out infinite; }
+.garden-code-line { transform-box: fill-box; transform-origin: left center; animation: garden-code-write 16s ease-in-out -6s infinite; }
+.garden-developer-hand { animation: garden-typing 16s ease-in-out -6s infinite; }
+.garden-code-check { transform-box: view-box; transform-origin: 191px 90px; animation: garden-code-done 16s ease-in-out -6s infinite; }
 .garden-spark { position: absolute; width: 18px; aspect-ratio: 1; background: #e9ac8d; clip-path: polygon(50% 0,61% 38%,100% 50%,61% 62%,50% 100%,39% 62%,0 50%,39% 38%); animation: garden-turn 17s ease-in-out infinite alternate; }
-.garden-spark--one { left: 34%; top: 17%; }
+.garden-spark--one { left: 43%; top: 17%; }
 .garden-spark--two { right: 31%; bottom: 11%; width: 12px; background: #a58bdf; animation-delay: -9s; }
 /* Paused by default: no-JS and the first paint stay decorative and still. */
 .atelier-hero .hero-garden *, .atelier-hero .hero-garden *:before, .atelier-hero .hero-garden *:after { animation-play-state: paused; }
@@ -55,10 +67,19 @@
 @keyframes garden-wheel { to { transform: rotate(360deg); } }
 @keyframes garden-glide { from { transform: translate(-18px, -6px) rotate(-9deg); } to { transform: translate(18px, 8px) rotate(4deg); } }
 @keyframes garden-turn { from { transform: rotate(-18deg) scale(.85); } to { transform: rotate(26deg) scale(1); } }
+@keyframes garden-maker-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes garden-design-arrange { 0%,12%,62%,100% { transform: translate(0,0); } 27%,47% { transform: translate(-4px,5px); } }
+@keyframes garden-pencil { 0%,12%,62%,100% { transform: rotate(0); } 27%,47% { transform: rotate(-5deg); } }
+@keyframes garden-design-point { 0%,12%,62%,100% { transform: translate(0,0); } 27%,47% { transform: translate(-6px,-5px); } }
+@keyframes garden-code-write { 0%,14%,70%,100% { transform: scaleX(1); } 24% { transform: scaleX(.4); } 45%,58% { transform: scaleX(1.2); } }
+@keyframes garden-typing { 0%,14%,28%,42%,70%,100% { transform: translateY(0); } 21%,35% { transform: translateY(-2px); } }
+@keyframes garden-code-done { 0%,38%,72%,100% { transform: scale(1); } 48%,58% { transform: scale(1.09) rotate(-6deg); } }
 @media(min-width:1800px) { .garden-plant--rose,.garden-plant--sun { width: 300px; }.garden-plant--coral { left: 17%; width: 180px; }.garden-plant--lilac { right: 16%; width: 160px; }.garden-sprig--left { left: 190px; }.garden-sprig--right { right: 190px; } }
-@media(max-width:1150px) { .garden-plant--rose,.garden-plant--sun { width: 180px; }.garden-plant--coral { left: -26px; top: 115px; width: 135px; }.garden-plant--lilac { right: -20px; top: 150px; width: 120px; }.hero-garden .garden-glider { left: 63%; top: 122px; width: 60px; height: 45px; }.garden-sprig--left { left: 55px; }.garden-sprig--right { right: 70px; }.garden-spark--one { top: 18%; left: 25%; } }
+@media(max-width:1150px) { .garden-plant--rose,.garden-plant--sun { width: 180px; }.garden-plant--coral { left: -26px; top: 115px; width: 135px; }.garden-plant--lilac { right: -20px; top: 150px; width: 120px; }.garden-maker { width: 165px; top: 100px; }.garden-maker--designer { left: 20%; }.garden-maker--developer { right: 19%; }.garden-sprig--left { left: 55px; }.garden-sprig--right { right: 70px; }.garden-spark--one { top: 142px; left: 44%; } }
 @media(max-width:600px) {
-  .atelier-hero { min-height: 760px; padding-bottom: 140px; }
+  .atelier-hero { min-height: 860px; padding-top: 200px; padding-bottom: 140px; }
+  .garden-maker { width: 124px; top: 98px; }
+  .garden-maker--designer { left: 12%; }.garden-maker--developer { right: 10%; }
   .garden-plant--rose { width: 112px; left: -34px; bottom: -30px; }
   .garden-plant--sun { width: 106px; right: -32px; bottom: -24px; }
   .garden-plant--coral { width: 87px; left: -30px; top: 90px; }
@@ -67,8 +88,8 @@
   .garden-sprig--left { left: 20px; }.garden-sprig--right { right: 20px; }
   .garden-traveller--walker { width: 88px; bottom: 28px; animation-duration: 29s; animation-delay: -7s; }
   .garden-traveller--cyclist { width: 114px; bottom: 31px; animation-duration: 24s; animation-delay: -15s; }
-  .hero-garden .garden-glider { left: 63%; top: 105px; width: 46px; height: 34px; }
-  .garden-spark--one { top: 108px; left: 31%; width: 11px; }.garden-spark--two { display: none; }
+  .hero-garden .garden-glider { left: 47%; top: 102px; width: 32px; height: 24px; }
+  .garden-spark--one,.garden-spark--two { display: none; }
   .hero-motion-toggle { right: 12px; bottom: 8px; min-height: 44px; padding: 7px 11px; font-size: 11px; gap: 7px; }
   .garden-motion-icon { width: 9px; height: 10px; border-inline-width: 2px; }
 }

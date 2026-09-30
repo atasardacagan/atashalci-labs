@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 210" fill="none" aria-hidden="true" focusable="false">
+  <g stroke="#160572" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <g class="garden-design-window">
+      <path d="M90 26 216 36 207 151 80 141Z" fill="#f8f3ef"/>
+      <path d="m89 44 125 10"/>
+      <path d="m99 35 1 .1m8 .6 1 .1m8 .6 1 .1" stroke="#a58bdf" stroke-width="4"/>
+      <path d="m180 42 22 2" stroke="#a58bdf"/>
+      <path d="m99 61 52 4m-53 6 38 3" stroke-width="4"/>
+      <g class="garden-design-tile">
+        <path d="m162 65 39 3-4 39-38-3Z" fill="#e9a4c5" stroke="none"/>
+        <path d="M178 76c-2-10-14-5-9 4l9 15 14-12c8-8-3-16-9-7l-3 5Z" fill="#d64e2e" stroke="none"/>
+      </g>
+      <path d="m97 86 42 3m-43 6 49 4m-50 7 35 2" stroke="#aaa0c8" stroke-width="3"/>
+      <path d="m96 119 40 3-1 12-40-3Z" fill="#28d3b5" stroke="none"/>
+      <path d="m156 121 36 3m-37 6 28 2" stroke="#aaa0c8" stroke-width="3"/>
+      <path d="m73 68 12 1m-7-7-1 12" stroke="#f4d86a" stroke-width="2"/>
+    </g>
+    <path d="m53 137-9 28-12 27 15 5 16-25 11-23" fill="#20b6a0"/>
+    <path d="m68 142 7 28 25 17 8-12-20-17-1-24" fill="#168477"/>
+    <path d="m33 188-7 10c8 7 21 7 27 4l-4-9-5-1m56-12-6 10c7 8 19 11 25 7l-3-6-10-5" fill="#f8f3ef"/>
+    <path d="M43 84c7-9 23-10 35 0l13 54c-16 9-35 12-53 1Z" fill="#e77f65"/>
+    <path d="m48 95-18 29 15 13 12-21" fill="#e77f65"/>
+    <path d="m42 130 11 8 5-3 4 4-3 9-9-2-15-10" fill="#eea883"/>
+    <path d="m55 70-1 13c7 6 15 6 20-1l-7-16" fill="#eea883"/>
+    <path d="M50 47c5-10 27-9 30 4l-1 8 7 7-8 3-1 9c-16 5-30-8-27-31Z" fill="#eea883"/>
+    <path d="M44 65c-14-9-7-25 4-26-5-12 2-24 14-20 5 2 7 7 6 12 17-2 22 16 11 19l-20-5c3 13-9 17-10 14-4-5-10 1-5 6Z" fill="#160572" stroke="#f8f3ef" stroke-width="1.5"/>
+    <path d="m71 56 1 1m-1 13 6-1"/>
+    <path d="m44 39 14-5" stroke="#a58bdf" stroke-width="5"/>
+    <g class="garden-designer-arm">
+      <path d="m76 92 18 15 22-24 11 10-27 34-13-2-21-16" fill="#e77f65"/>
+      <path d="m113 87 11 10"/>
+      <path d="m115 84 5-14 6-3 8 9-4 11-6 7Z" fill="#eea883"/>
+      <path d="m121 80 14-40 8 3-14 39-6 6Z" fill="#f4d86a"/>
+      <path d="m135 40 6-7 2 10m-22 37 8 2" fill="#f8f3ef"/>
+    </g>
+    <g class="garden-design-cursor">
+      <path d="m199 135 7 26 7-9 11-3Z" fill="#a58bdf" stroke="#f8f3ef" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

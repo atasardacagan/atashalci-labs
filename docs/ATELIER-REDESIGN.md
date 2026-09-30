@@ -57,7 +57,7 @@ The implementation was then substantially corrected:
 - Independent surface sampling keeps the fixed logo and language control legible across different backgrounds. Small matching backplates prevent text collisions while scrolling.
 - The updated typography was checked in both languages at 1920, 1440, 1366, 1280, 1024, 768, 430, 390 and 375 pixels. No measured horizontal overflow or clipped headings, paragraphs or buttons. Native service disclosures and all three study states survived language changes. Menu open/close, Escape and background inertness were checked in-browser.
 
-The reference supplies composition, scale and interaction direction; Atashalci Labs uses its own copy, wordmark and native graphic compositions. The opening now uses a new, authored vector garden scene: blooming flowers, a walking character, a cyclist and a drifting paper plane. It is decorative, content-safe, pausable, and fully disabled for reduced-motion preferences.
+The reference supplies composition, scale and interaction direction; Atashalci Labs uses its own copy, wordmark and native graphic compositions. The opening now uses an authored vector garden scene: blooming flowers, a walking character, a cyclist, a drifting paper plane, a web designer and a software developer. It is decorative, content-safe, pausable, and fully disabled for reduced-motion preferences.
 
 
 ## Measured structural revision — 30 September 2026
