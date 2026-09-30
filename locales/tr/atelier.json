@@ -5,10 +5,10 @@
   "atelier.nav.contact": "Konuşalım",
   "atelier.menu.open": "Menü",
   "atelier.menu.close": "Kapat",
-  "atelier.hero.eyebrow": "BAĞIMSIZ WEB TASARIM & GELİŞTİRME STÜDYOSU",
-  "atelier.hero.title": "İyi web siteleri.<br>Sizin dünyanız için.",
+  "atelier.hero.eyebrow": "WEB TASARIM + GELİŞTİRME",
+  "atelier.hero.title": "İşinizin bir tarzı var.<br><em>Sitenizin de olsun.</em>",
   "atelier.hero.copy": "Özenle tasarlıyor, titizlikle geliştiriyoruz. Sizi yansıtan, ziyaretçilerinizin keyifle kullandığı web siteleri yapıyoruz.",
-  "atelier.hero.cta": "Web sitenizi birlikte yapalım",
+  "atelier.hero.cta": "Sitenizi konuşalım",
   "atelier.hero.location": "İSTANBUL’DA KÜÇÜK BİR STÜDYO. DÜNYAYA AÇIK.",
   "atelier.hero.scroll": "Biraz keşfedin",
   "atelier.intro.label": "MERHABA, BİZ ATASHALCI LABS.",
@@ -92,5 +92,7 @@
   "atelier.error.title": "Sayfanın biraz dışındayız.",
   "atelier.error.copy": "Aradığınız sayfa burada değil. Sizi stüdyoya geri götürelim.",
   "atelier.error.back": "Stüdyoya dön",
-  "atelier.hero.subtitle": "Özgün tasarım. Özenli geliştirme."
+  "atelier.hero.subtitle": "İşinizi doğru anlatan, her ekranda rahat kullanılan web siteleri tasarlıyor ve geliştiriyoruz.",
+  "atelier.hero.explore": "Denemeleri keşfet",
+  "atelier.hero.reassurance": "Bir fikir yeter. Gerisini birlikte netleştiririz."
 }

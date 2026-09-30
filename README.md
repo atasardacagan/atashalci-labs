@@ -22,12 +22,12 @@ Open http://127.0.0.1:4187/ or http://127.0.0.1:4187/tr. Reuse a running server 
 | `templates/404.html` | Localized error page |
 | `locales/en/atelier.json`, `locales/tr/atelier.json`, `locales/*/reference.json` | Web-focused editorial copy, capability gallery, form labels and study feedback |
 | `locales/en/static.json`, `locales/tr/static.json` | Metadata and shared labels |
-| `dist/assets/atelier.css`, `reference.css` | Base illustration primitives and measured reference layout |
+| `dist/assets/atelier.css`, `reference.css`, `rounded.css` | Base illustration primitives, measured reference layout and rounded typography/hero refinements |
 | `dist/assets/atelier.js` | Menu illustration previews, study controls, workflow scrolling, email draft preparation and clipboard sharing |
 | `dist/assets/i18n.js`, `locale-preference.js` | In-place localization, URLs, metadata and explicit preference |
 | `dist/assets/cursor.js`, `cursor.css` | Retained historical cursor source; not loaded by the current design |
 | `dist/assets/images/atelier-garden.webp` | Retained artwork from the first draft; not loaded by the current page |
-| `dist/assets/fonts/` | Self-hosted Fraunces Black, Allura wordmark and their SIL Open Font Licenses |
+| `dist/assets/fonts/` | Self-hosted Baloo 2 and Nunito with Latin/Latin Extended WOFF2 subsets and SIL Open Font Licenses; older fonts retained but not loaded |
 | `dist/assets/illustrations/` | Six original native SVG studio illustrations |
 | `dist/assets/share-card.png`, `share-card.svg` | Social preview and editable type/shape composition |
 | `scripts/build.py`, `check.py`, `serve.py` | Static rendering, validation and local preview |
@@ -77,3 +77,7 @@ SITE_ORIGIN=https://atasardacagan.github.io SITE_BASE_PATH=/atashalci-labs SITE_
 ```
 
 Run `python3 scripts/build.py` without those variables to restore root-based local preview output. This command does not publish. Any local `.openai/hosting.json` belongs to historical hosting and is not used by GitHub deployment. The public static website runs independently of the preview server and the developer's computer.
+
+## Rounded typography and opening message
+
+Baloo 2 provides the rounded display/wordmark voice; Nunito carries paragraphs and controls. Font files are served locally; no Google Fonts request happens in visitors’ browsers. The EN and TR opening speaks to the visitor’s own business, explicitly describes web design/development, and offers two real destinations: the brief (`#contact`) and a working study (`#lab-001`). The social PNG/SVG follows the same typography and message. This is a copy/design hypothesis, not a measured conversion claim.

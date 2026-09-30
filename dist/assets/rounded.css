@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(./fonts/baloo-2-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(./fonts/baloo-2-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(./fonts/nunito-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(./fonts/nunito-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Rounded studio voice. Existing scene structure and prototype state are preserved. */
+:root { --display: "Baloo 2", "Trebuchet MS", sans-serif; --serif: var(--display); --reference-serif: var(--display); --sans: Nunito, Arial, sans-serif; }
+body { font-family: var(--sans); }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; letter-spacing: -.02em; }
+.reference-intro h2 { line-height: 1.12; letter-spacing: -.02em; font-weight: 500; }
+.feature-copy h2, .study-intro h3, .story-copy h2, .study-expressive .study-intro h3 { line-height: 1.04; letter-spacing: -.025em; }
+.feature-copy>p, .study-intro>p, .story-copy>p { line-height: 1.32; }
+.reference-link, .footer-directory summary, .marquee-track>a, .text-link, #project-brief button { font-weight: 500; letter-spacing: -.015em; }
+.gallery-item { font-weight: 600; }
+.menu-links>a { font-weight: 500; letter-spacing: -.02em; line-height: 1.08; }
+.menu-capabilities a { font-weight: 700; }
+.editorial-bottom>p, .expressive-word { font-weight: 500; letter-spacing: -.02em; }
+.atelier-header .atelier-brand { font: 600 32px/.9 var(--display); letter-spacing: -.035em; width: 175px; min-width: 175px; transform: none; padding: 0; }
+.atelier-header .atelier-brand i { margin-left: 36px; margin-top: 5px; }
+body.menu-open .atelier-header .atelier-brand { font-family: var(--display); font-weight: 600; }
+body.menu-open .atelier-header .atelier-brand span:after { font: 600 22px/1 var(--display); letter-spacing: -.08em; }
+.atelier-hero { min-height: 740px; height: 100svh; padding: 135px 24px 95px; }
+.hero-content { width: min(1060px, 100%); max-width: 1060px; }
+.hero-eyebrow { font: 700 12px/1.5 var(--sans); letter-spacing: .12em; margin-bottom: 26px; color: #e0def1; }
+.hero-content h1 { font: 600 clamp(58px, 5.6vw, 84px)/1.04 var(--display); letter-spacing: -.025em; text-wrap: balance; }
+.hero-content h1 em { color: #28d3b5; }
+.hero-subtitle { font: 400 21px/1.45 var(--sans); letter-spacing: 0; max-width: 650px; margin: 26px auto 0; color: #f8f3ef; text-wrap: pretty; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 18px 30px; margin-top: 34px; }
+.hero-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 15px; min-height: 54px; font: 700 17px/1.25 var(--sans); }
+.hero-primary { background: #28d3b5; color: #160572; border-radius: 999px; padding: 16px 27px; transition: background .2s, transform .2s; }
+.hero-primary:hover { background: #8de8d5; transform: translateY(-2px); }
+.hero-primary:focus-visible { outline-color: #f8f3ef; }
+.hero-explore { color: #f8f3ef; padding: 14px 4px; }
+.hero-explore:hover span[data-i18n] { text-decoration: underline; text-underline-offset: 5px; }
+.hero-actions .ui-arrow { font-size: 20px; }
+.hero-reassurance { font: 400 14px/1.4 var(--sans); color: #c9c4e9; margin: 20px auto 0; max-width: 520px; }
+@media(min-width:1800px) { .hero-content h1 { font-size: 92px; } }
+@media(max-width:1100px) { .hero-content { max-width: 900px; } .hero-content h1 { font-size: clamp(57px,7vw,76px); } }
+@media(max-width:800px) { .atelier-header .atelier-brand { width: 150px; min-width: 150px; font-size: 28px; } .hero-content h1 { font-size: 62px; } .hero-subtitle { font-size: 20px; max-width: 580px; } .hero-eyebrow { margin-bottom: 22px; } }
+@media(max-width:600px) {
+  .atelier-header .atelier-brand { font: 600 23px/1 var(--display); width: 42px; min-width: 42px; height: 42px; }
+  .atelier-header .atelier-brand span:after { font: 600 21px/1 var(--display); letter-spacing: -.08em; }
+  .atelier-hero { min-height: 720px; height: 100svh; padding: 116px 22px 70px; }
+  .hero-content { width: 100%; max-width: 460px; }
+  .hero-content h1 { font-size: clamp(42px,11vw,56px); line-height: 1.06; letter-spacing: -.025em; }
+  .hero-eyebrow { font-size: 10px; letter-spacing: .1em; margin-bottom: 22px; }
+  .hero-subtitle { font-size: 18px; line-height: 1.45; margin-top: 24px; }
+  .hero-actions { flex-direction: column; gap: 3px; margin-top: 26px; }
+  .hero-actions a { font-size: 16px; min-height: 50px; max-width: 100%; }
+  .hero-primary { padding: 15px 24px; }
+  .hero-reassurance { font-size: 13px; max-width: 300px; margin-top: 10px; }
+  .reference-intro h2 { line-height: 1.12; }
+  .menu-links>a { line-height: 1.1; }
+}
+@media(max-height:700px) and (min-width:601px) { .atelier-hero { height: auto; min-height: 700px; padding-top: 145px; } }
+@media(prefers-reduced-motion:reduce) { .hero-primary { transition: none; } .hero-primary:hover { transform: none; } }

@@ -84,3 +84,16 @@ Verification for this revision:
 - Reduced-motion emulation stops the marquee. Fresh root starts in English; explicit Turkish persists after reload; localized missing-route screen was inspected. No missing loaded images or console warnings/errors were observed.
 - Existing 82 Node model/localization tests and 12 route/catalog tests pass. Static validation covers four pages, local references, current locale parity, metadata and fingerprints. These checks do not substitute for the visual browser review; no physical-device/Safari certification is claimed.
 - Current visual evidence: ../atashalci-labs-review/reference-match/. The previous screenshot set documents the superseded first adaptation.
+
+
+## Rounded typography and visitor hook — 30 September 2026
+
+The user requested a more playful, oval, readable font and a stronger reason for visitors to stay, while approving the existing opening composition.
+
+- Replaced active display typography and the script wordmark with Baloo 2. Nunito is the body/control face. Rounded forms, moderate weights and more open line spacing replace the previous dense serif setting. The indigo/cream/turquoise palette, centered opening, illustration gallery and scene structure remain.
+- The Turkish opening reads “İşinizin bir tarzı var. / Sitenizin de olsun.” English reads “You have a style. / Your website should, too.” Supporting copy explicitly identifies the design/development service; the visible primary link opens the brief and the secondary link leads to a working interface study. Reassurance copy lowers the barrier to starting a conversation without promising free work, outcomes or invented proof.
+- Both fonts are self-hosted official Google Fonts WOFF2 Latin/Latin Extended subsets with OFL files. Fredoka was considered but rejected after Chrome’s platform-font inspection showed five Turkish characters falling back. For the final Baloo 2 and Nunito, the exact string ÇĞİÖŞÜçğıöşü rendered all twelve glyphs with the chosen custom font and no fallback.
+- Both locales checked at 1920, 1440, 1366, 1280, 1024, 768, 430, 390 and 375px: no document horizontal overflow or measured clipping in headings, descriptions and CTA text. An additional 375×667 view confirmed both hero actions visible in the opening viewport.
+- Hero contact anchor lands on the contact area; the experiment anchor opens LAB 001. Study state survives EN/TR switching. Menu and wordmark use the new typefaces; reduced-motion behavior remains. No browser warnings/errors recorded.
+- Share card rebuilt in native SVG with the new type and opening message, rendered in Chrome at 1200×630 into the crawler PNG. Its localized alternative descriptions were updated.
+- No runtime script or form behavior changed. Existing build, production-path validation, model/localization and routing suites rerun. Visual evidence is kept outside the repository in ../atashalci-labs-review/rounded-type/.

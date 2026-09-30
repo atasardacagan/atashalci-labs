@@ -5,10 +5,10 @@
   "atelier.nav.contact": "Let’s talk",
   "atelier.menu.open": "Menu",
   "atelier.menu.close": "Close",
-  "atelier.hero.eyebrow": "INDEPENDENT WEB DESIGN & DEVELOPMENT",
-  "atelier.hero.title": "Good websites.<br>Made for your world.",
+  "atelier.hero.eyebrow": "WEB DESIGN + DEVELOPMENT",
+  "atelier.hero.title": "You have a style.<br><em>Your website should, too.</em>",
   "atelier.hero.copy": "Thoughtfully designed. Carefully built. We make websites that feel like you—and work for the people who use them.",
-  "atelier.hero.cta": "Let’s make your website",
+  "atelier.hero.cta": "Let’s talk about your website",
   "atelier.hero.location": "A SMALL STUDIO IN ISTANBUL. OPEN TO THE WORLD.",
   "atelier.hero.scroll": "Take a look around",
   "atelier.intro.label": "HELLO, WE’RE ATASHALCI LABS.",
@@ -92,5 +92,7 @@
   "atelier.error.title": "A little off the page.",
   "atelier.error.copy": "This page isn’t here. Let’s take you back to the studio.",
   "atelier.error.back": "Back to the studio",
-  "atelier.hero.subtitle": "Designed with character. Built with care."
+  "atelier.hero.subtitle": "We design and build websites that express your business and feel right on every screen.",
+  "atelier.hero.explore": "Explore the experiments",
+  "atelier.hero.reassurance": "An idea is enough. We’ll work out the rest together."
 }
